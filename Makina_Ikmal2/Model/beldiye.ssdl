@@ -1,0 +1,1692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="belediyeEntities.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="FAALIYET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TARIH" Type="date" />
+    <Property Name="YILI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ARACBAKIMATOLYE" Type="int" />
+    <Property Name="ARACBAKIMARAZI" Type="int" />
+    <Property Name="ARACBAKIMDIS" Type="int" />
+    <Property Name="YAGBAKIM" Type="int" />
+    <Property Name="ZORUNLUTRFKSIGORTA" Type="int" />
+    <Property Name="MUAYENE" Type="int" />
+    <Property Name="BAIKRESMI" Type="int" />
+    <Property Name="BAIKHIZMET" Type="int" />
+    <Property Name="YAKITMOTORIN" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="YAKITBENZIN" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="RESMIKIRALIKMOTORIN" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="RESMIKIRALIKBENZIN" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SUBEMUDURU" Type="int" />
+    <Property Name="AYI" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HAKEDISAKARYAKIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PLAKA" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="HAKEDISYDKARAC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PLAKA" Type="nvarchar" MaxLength="20" />
+    <Property Name="BASLAMATARIHI" Type="date" />
+    <Property Name="CIKISTARIHI" Type="date" />
+    <Property Name="SIRKETID" Type="int" />
+    <Property Name="ARACID" Type="int" />
+  </EntityType>
+  <EntityType Name="TAHARACDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ARACDURUM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TAHARACHGS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="HGSTARIH" Type="datetime" />
+    <Property Name="HGSETIKETNO" Type="nvarchar" MaxLength="150" />
+    <Property Name="GUNCELARAC" Type="nvarchar" MaxLength="150" />
+    <Property Name="GUNCELTARIH" Type="datetime" />
+    <Property Name="IPTALTARIH" Type="datetime" />
+    <Property Name="ILGILINOT" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TAHARACTIPI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ARACTIPI" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TAHARIZANEDENI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ARIZANEDENI" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TAHBAKIMDERECE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BAKIMDERECE" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TAHBAKIMTURU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BAKIMTURU" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TAHMODELYILI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YILI" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLARACGRUBU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GRUPADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLARACGRUBU2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GRUPADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLARACIHALEGRUP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IHALEADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLARACLAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="VERILDIGIILILCE" Type="nvarchar" MaxLength="50" />
+    <Property Name="PLAKA" Type="nvarchar" MaxLength="50" />
+    <Property Name="ARACACIKLAMA" Type="nvarchar" MaxLength="200" />
+    <Property Name="TAHSPLAKA" Type="nvarchar" MaxLength="50" />
+    <Property Name="TAHSPLKTARIH" Type="nvarchar" MaxLength="50" />
+    <Property Name="ESKIPLAKA" Type="nvarchar" MaxLength="50" />
+    <Property Name="TESCILSIRANO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ILKTESCILTARIHI" Type="nvarchar" MaxLength="50" />
+    <Property Name="TESCILTARIHI" Type="nvarchar" MaxLength="50" />
+    <Property Name="MARKAID" Type="int" />
+    <Property Name="MODEL" Type="nvarchar" MaxLength="50" />
+    <Property Name="CINSI" Type="nvarchar" MaxLength="50" />
+    <Property Name="TICARIADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="TIPI" Type="nvarchar" MaxLength="50" />
+    <Property Name="RENGI" Type="nvarchar" MaxLength="50" />
+    <Property Name="MOTORNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SASENO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SILINDIRHACMI" Type="nvarchar" MaxLength="50" />
+    <Property Name="MOTORGUCU" Type="nvarchar" MaxLength="50" />
+    <Property Name="BEYGIRGUCU" Type="nvarchar" MaxLength="50" />
+    <Property Name="TEKERLEKADEDI" Type="nvarchar" MaxLength="50" />
+    <Property Name="YURUYENAKSAMI" Type="nvarchar" MaxLength="50" />
+    <Property Name="LASTIKEBADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="DIGEROZELLIKLER" Type="nvarchar" MaxLength="50" />
+    <Property Name="MUAYENEGECSUR" Type="datetime" />
+    <Property Name="TRAFIKSGORTA" Type="nvarchar" MaxLength="50" />
+    <Property Name="KASKO" Type="nvarchar" MaxLength="50" />
+    <Property Name="BELGESERINO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ARACFIRMAID" Type="int" />
+    <Property Name="BELDBIRIMID" Type="int" />
+    <Property Name="BELDMUDURLUKID" Type="int" />
+    <Property Name="TAHSISEDILENID" Type="int" />
+    <Property Name="ARACKULPERSID" Type="int" />
+    <Property Name="ARACGRUBUID" Type="int" />
+    <Property Name="ARACGRUBU2ID" Type="int" />
+    <Property Name="YAKITID" Type="int" />
+    <Property Name="YKTYAKMATURU" Type="nvarchar" MaxLength="50" />
+    <Property Name="STDYKYAKIT" Type="nvarchar" MaxLength="50" />
+    <Property Name="ARACDURUMID" Type="int" />
+    <Property Name="ARACTIPIID" Type="int" />
+    <Property Name="TKPVARYOK" Type="nvarchar" MaxLength="50" />
+    <Property Name="YEDEKANAHTAR" Type="nvarchar" MaxLength="50" />
+    <Property Name="YEDEKANHTRACKLM" Type="nvarchar" MaxLength="100" />
+    <Property Name="GOREVBITIMTARIH" Type="datetime" />
+    <Property Name="GOREVDURUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="ILGILINOT" Type="nvarchar" MaxLength="250" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="10" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="10" />
+    <Property Name="ARACRESIM1" Type="nvarchar" MaxLength="50" />
+    <Property Name="ARACRESIM2" Type="nvarchar" MaxLength="50" />
+    <Property Name="TAKIPVARYOKID" Type="int" />
+    <Property Name="SIRANO" Type="nvarchar" MaxLength="20" />
+    <Property Name="GUNCELDEGERI" Type="nvarchar" MaxLength="50" />
+    <Property Name="YENIDEGERI" Type="nvarchar" MaxLength="50" />
+    <Property Name="PARABIRIMI" Type="nvarchar" MaxLength="50" />
+    <Property Name="GENELBAKIMKM" Type="nvarchar" MaxLength="50" />
+    <Property Name="MOTORYAGKM" Type="nvarchar" MaxLength="50" />
+    <Property Name="SANZIMANYAGKM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DIFERANSIYELYAGKM" Type="nvarchar" MaxLength="50" />
+    <Property Name="HIDROLIKYAGKM" Type="nvarchar" MaxLength="50" />
+    <Property Name="YENIDEGERTARIH" Type="date" />
+    <Property Name="HGSVARYOK" Type="int" />
+    <Property Name="EGZOZKONTROL" Type="datetime" />
+    <Property Name="TRAFIKSGORTA2" Type="datetime" />
+    <Property Name="ARACIHALEGRUPID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLARACMARKA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ARACMARKA" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLARACMESTKP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TARIHSAAT" Type="datetime2" Precision="7" />
+    <Property Name="PLAKA" Type="nvarchar" MaxLength="50" />
+    <Property Name="MESAIICI" Type="nvarchar" MaxLength="50" />
+    <Property Name="MESAIDISI" Type="nvarchar" MaxLength="50" />
+    <Property Name="TOPLAMKM" Type="nvarchar" MaxLength="50" />
+    <Property Name="CALISMASURESI" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLARACRESIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="ARACRESIMARKA" Type="image" />
+    <Property Name="ARACRESIMON" Type="image" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLARACTRFCEZA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KAYITTARIHI" Type="datetime2" Precision="7" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="FISNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="CEZATARIHI" Type="datetime2" Precision="7" />
+    <Property Name="CEZASAATI" Type="datetime2" Precision="7" />
+    <Property Name="CEZAACIKLAMA" Type="nvarchar" MaxLength="250" />
+    <Property Name="CEZATUTARI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CEZATURU" Type="nvarchar" MaxLength="50" />
+    <Property Name="BELDBIRIMID" Type="int" />
+    <Property Name="BELDMUDURLUKID" Type="int" />
+    <Property Name="ODEMEDURUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="ILGILINOT" Type="nvarchar" MaxLength="250" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLARACYEDEKALIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TARIH" Type="datetime2" Precision="7" />
+    <Property Name="SAAT" Type="datetime2" Precision="7" />
+    <Property Name="DEGISIMSEBEBI" Type="nvarchar" MaxLength="50" />
+    <Property Name="GIDENARACID" Type="int" />
+    <Property Name="YEDEKARAC" Type="nvarchar" MaxLength="50" />
+    <Property Name="YEDEKARACMARKA" Type="nvarchar" MaxLength="50" />
+    <Property Name="ILGILINOT" Type="nvarchar" MaxLength="250" />
+    <Property Name="TESLIMALANID" Type="int" />
+    <Property Name="FIRMAYETKILISI" Type="nvarchar" MaxLength="100" />
+    <Property Name="TESLIMEDENID" Type="int" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLARACZIMMET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="TARIH" Type="datetime2" Precision="7" />
+    <Property Name="SAAT" Type="datetime2" Precision="7" />
+    <Property Name="ZIMMETALANID" Type="int" />
+    <Property Name="TAHSISEDILENID" Type="int" />
+    <Property Name="ONCEKIARACI" Type="nvarchar" MaxLength="50" />
+    <Property Name="BELDBIRIMID" Type="int" />
+    <Property Name="BELDMUDURLUKID" Type="int" />
+    <Property Name="ILGILINOT" Type="nvarchar" MaxLength="250" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLATOLYEBOLUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BOLUMADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLATOLYEUSTALAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ATOLYEID" Type="int" />
+    <Property Name="USTAADISOYADI" Type="nvarchar" MaxLength="100" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLAYARLAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BIRIMADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="PERSONEID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLBAKIMGRUBU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GRUPADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLBAKIMTANIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ATOLYEID" Type="int" />
+    <Property Name="BAKIMGRUBUID" Type="int" />
+    <Property Name="YAPILANBAKIM" Type="nvarchar" MaxLength="250" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLBAKIMYERI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLBELDBIRIMLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BELDBIRIMADI" Type="nvarchar" MaxLength="80" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLBELDMUDURLUK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BELDBIRIMID" Type="int" />
+    <Property Name="BELDMUDURLUK" Type="nvarchar" MaxLength="100" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLBIRIMYETKILILERI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YETKIALANI" Type="nvarchar" MaxLength="50" />
+    <Property Name="YETKILIID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLDEPOFIS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISEMRIID" Type="int" />
+    <Property Name="TARIH" Type="datetime2" Precision="7" />
+    <Property Name="SAAT" Type="datetime2" Precision="7" />
+    <Property Name="FISNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ALANUSTAID" Type="int" />
+    <Property Name="FIRMAID" Type="int" />
+    <Property Name="ISLEMTIPIID" Type="nvarchar" MaxLength="50" />
+    <Property Name="TOPTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TOPKDVTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FISTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GCKOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="TRANSFERID" Type="int" />
+    <Property Name="TRANSDEPOGCID" Type="int" />
+    <Property Name="IMZADEPOYETKILIID" Type="int" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="TALEPFISID" Type="int" />
+    <Property Name="GIRISICIKISYAPID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLDEPOFISHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DEPOFISID" Type="int" />
+    <Property Name="MALZEMEID" Type="int" />
+    <Property Name="MALZACIKLAMA" Type="nvarchar" MaxLength="150" />
+    <Property Name="BIRIMID" Type="int" />
+    <Property Name="MIKTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GIRISMIKTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CIKISMIKTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GIRISTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CIKISTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KDVORAN" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KDVTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SATIRTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="GCKOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEPOID" Type="int" />
+    <Property Name="MALZMARKAID" Type="int" />
+    <Property Name="MALZSERINO" Type="nvarchar" MaxLength="50" />
+    <Property Name="MALZURTTARIH" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEGISIMKMSI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SONRAKIDEGKM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLFIRMALAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SEKTORID" Type="int" />
+    <Property Name="FIRMAADI" Type="nvarchar" MaxLength="80" />
+    <Property Name="FALIYETALANI" Type="nvarchar" MaxLength="80" />
+    <Property Name="YETKILISI" Type="nvarchar" MaxLength="80" />
+    <Property Name="FIRMAADRES" Type="nvarchar" MaxLength="150" />
+    <Property Name="VERGIDAIRE" Type="nvarchar" MaxLength="50" />
+    <Property Name="VERGINO" Type="nvarchar" MaxLength="50" />
+    <Property Name="TELEFON" Type="nvarchar" MaxLength="50" />
+    <Property Name="CEPTELEFON" Type="nvarchar" MaxLength="50" />
+    <Property Name="EMAIL" Type="nvarchar" MaxLength="100" />
+    <Property Name="WEBADRES" Type="nvarchar" MaxLength="100" />
+    <Property Name="ILGILINOT" Type="nvarchar" MaxLength="250" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'bell.dbo.TBLFIRMASEKTOR' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TBLFIRMASEKTOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SEKTORADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLFORMKULLANICI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KULLANICIID" Type="int" />
+    <Property Name="KOMUTADI" Type="varchar" MaxLength="250" />
+    <Property Name="SALTOKUNUR" Type="varchar" MaxLength="50" />
+    <Property Name="KAYIT" Type="bit" />
+    <Property Name="SİL" Type="bit" />
+    <Property Name="GUNCELLEME" Type="bit" />
+    <Property Name="LISTELEME" Type="bit" />
+    <Property Name="KOMUTID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLHAKARACHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AYI" Type="nvarchar" MaxLength="50" />
+    <Property Name="YILI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="ARACTIPI" Type="int" />
+    <Property Name="BASLATARİHİ" Type="date" />
+    <Property Name="CIKISTARİHİ" Type="date" />
+    <Property Name="CALISMAGUNSAYISI" Type="int" />
+    <Property Name="SERVISBAKIMGUNSAYISI" Type="int" />
+    <Property Name="EKSIKGUNSAYISI" Type="int" />
+    <Property Name="BIR" Type="nchar" MaxLength="10" />
+    <Property Name="IKI" Type="nchar" MaxLength="10" />
+    <Property Name="UC" Type="nchar" MaxLength="10" />
+    <Property Name="DORT" Type="nchar" MaxLength="10" />
+    <Property Name="BES" Type="nchar" MaxLength="10" />
+    <Property Name="ALTI" Type="nchar" MaxLength="10" />
+    <Property Name="YEDI" Type="nchar" MaxLength="10" />
+    <Property Name="SEKIZ" Type="nchar" MaxLength="10" />
+    <Property Name="DOKUZ" Type="nchar" MaxLength="10" />
+    <Property Name="ON" Type="nchar" MaxLength="10" />
+    <Property Name="ONBIR" Type="nchar" MaxLength="10" />
+    <Property Name="ONIKI" Type="nchar" MaxLength="10" />
+    <Property Name="ONUC" Type="nchar" MaxLength="10" />
+    <Property Name="ONDORT" Type="nchar" MaxLength="10" />
+    <Property Name="ONBES" Type="nchar" MaxLength="10" />
+    <Property Name="ONALTI" Type="nchar" MaxLength="10" />
+    <Property Name="ONYEDI" Type="nchar" MaxLength="10" />
+    <Property Name="ONSEKIZ" Type="nchar" MaxLength="10" />
+    <Property Name="ONDOKUZ" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMI" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMIBIR" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMIIKI" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMIUC" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMIDORT" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMIBES" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMIALTI" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMIYEDI" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMISEKIZ" Type="nchar" MaxLength="10" />
+    <Property Name="YIRMIDOKUZ" Type="nchar" MaxLength="10" />
+    <Property Name="OTUZ" Type="nchar" MaxLength="10" />
+    <Property Name="OTUZBIR" Type="nchar" MaxLength="10" />
+    <Property Name="YEDEKARACID" Type="int" />
+    <Property Name="HAKANAID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLHAKEDISANA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AYI" Type="nvarchar" MaxLength="50" />
+    <Property Name="YILI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISYERTSLTRHBASLAMA" Type="date" />
+    <Property Name="SOZLESMEYEGOREISINSURESI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISYERTSLTRHBITIS" Type="date" />
+    <Property Name="NOSU" Type="nchar" MaxLength="10" />
+    <Property Name="SOZBEDEL" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SUKTARIH" Type="date" />
+    <Property Name="SUKSAYISI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUKVERILANSURE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUKISBTRMTRH" Type="date" />
+    <Property Name="ALTSOZLESMEBEDELI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ALTONAYTARIHI" Type="date" />
+    <Property Name="ALTONAYSAYISI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ALTEKSOZLESMEBEDELI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ALTTOPLMASZLMBEDELI" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLHAKEDISARACLAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PLAKA" Type="nvarchar" MaxLength="20" />
+    <Property Name="BASLAMATARIHI" Type="date" />
+    <Property Name="CIKISTARIHI" Type="date" />
+    <Property Name="SIRKETID" Type="int" />
+    <Property Name="TIPID" Type="int" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="YEDEKARACID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLHAKEDISTIP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TIPADI" Type="nvarchar" MaxLength="80" />
+    <Property Name="BIRIMFIYATI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="MIKTARI" Type="int" />
+    <Property Name="CALISMAGUNSAYISI" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLHAKEDISTIPHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HAKEDISTIPID" Type="int" />
+    <Property Name="MIKTAR" Type="int" />
+    <Property Name="CALISMAGUNSAYISI" Type="int" />
+    <Property Name="ONCEKITPLGUNSAYISI" Type="int" />
+    <Property Name="HAKANAID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLIDARISARTHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDARISARTID" Type="int" />
+    <Property Name="SIRANO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ACIKLAMA" Type="nvarchar" MaxLength="250" />
+    <Property Name="DURUM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLIDARISARTNAME">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDARISARTADI" Type="nvarchar" MaxLength="80" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLIHALELER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IHALEKAYITNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDARENINADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="YUKLENICIADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISINTANIMI" Type="nvarchar" MaxLength="100" />
+    <Property Name="SOZLESMETARIHI" Type="datetime2" Precision="7" />
+    <Property Name="SOZLESMEBEDELI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ISINSURESI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISBITISTARIHI" Type="datetime2" Precision="7" />
+    <Property Name="IHALEDURUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLIHLHAKEDIS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IHALEID" Type="int" />
+    <Property Name="TARIH" Type="datetime2" Precision="7" />
+    <Property Name="HAKEDISNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="HAKEDISDONEM" Type="nvarchar" MaxLength="50" />
+    <Property Name="HAKEDISMIKTAR" Type="nvarchar" MaxLength="50" />
+    <Property Name="HAKEDISTUTARI" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLISEMIRDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLISEMRI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="ATOLYEID" Type="int" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="GIRISTARIH" Type="datetime2" Precision="7" />
+    <Property Name="GIRISSAAT" Type="datetime2" Precision="7" />
+    <Property Name="CIKISTARIH" Type="datetime2" Precision="7" />
+    <Property Name="CIKISSAAT" Type="datetime2" Precision="7" />
+    <Property Name="ARIZANEDENIID" Type="int" />
+    <Property Name="BILDIRILENARIZA" Type="text" />
+    <Property Name="ISEMRIDURUMID" Type="int" />
+    <Property Name="BAKIMYERIID" Type="int" />
+    <Property Name="BAKIMYERACKLM" Type="nvarchar" MaxLength="50" />
+    <Property Name="ARACIGETIREN" Type="nvarchar" MaxLength="50" />
+    <Property Name="BAKIMKMSI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SONRAKIBKMKM" Type="nvarchar" MaxLength="50" />
+    <Property Name="SONRAKIBKMTRH" Type="nvarchar" MaxLength="50" />
+    <Property Name="BAKIMSAATI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SONRAKIBKMSAAT" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISEMRISIRANO" Type="int" />
+    <Property Name="YAPILANBAKIMOZETI" Type="text" />
+    <Property Name="IMZAATOLYESEFID" Type="int" />
+    <Property Name="ISBITIMORANI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="20" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="20" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="20" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="20" />
+    <Property Name="BAKIMTURUID" Type="nvarchar" MaxLength="50" />
+    <Property Name="BAKIMDERECESIID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ATIKYAG" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLISEMRIBAKIMLAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ISEMRIID" Type="int" />
+    <Property Name="ATOLYEID" Type="int" />
+    <Property Name="BAKIMYAPUSTAID" Type="int" />
+    <Property Name="BAKIMGRUBUID" Type="int" />
+    <Property Name="YAPILANBAKIM" Type="nvarchar" MaxLength="200" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLISEMRIEKRYNL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YENILE" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLISLEMTIPI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ISLEMTIPI" Type="nvarchar" MaxLength="50" />
+    <Property Name="HARFI" Type="nvarchar" MaxLength="50" />
+    <Property Name="BOLUM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLKULLANICILAR">
+    <Key>
+      <PropertyRef Name="IDX" />
+    </Key>
+    <Property Name="ID" Type="int" />
+    <Property Name="SIRANO" Type="int" />
+    <Property Name="TURU" Type="varchar" MaxLength="50" />
+    <Property Name="KULLANICIADI" Type="varchar" MaxLength="150" />
+    <Property Name="UNVANI" Type="varchar" MaxLength="100" />
+    <Property Name="GOREVYERI" Type="varchar" MaxLength="150" />
+    <Property Name="SIFRE" Type="varchar" MaxLength="20" />
+    <Property Name="SIFRETEKRAR" Type="varchar" MaxLength="20" />
+    <Property Name="EKLE" Type="int" />
+    <Property Name="DUZENLE" Type="int" />
+    <Property Name="SIL" Type="int" />
+    <Property Name="OKUMA" Type="int" />
+    <Property Name="BELDBIRIMID" Type="int" />
+    <Property Name="SAVEUSER" Type="varchar" MaxLength="2" />
+    <Property Name="SAVEDATE" Type="varchar" MaxLength="19" />
+    <Property Name="EDITUSER" Type="varchar" MaxLength="2" />
+    <Property Name="EDITDATE" Type="varchar" MaxLength="19" />
+    <Property Name="SAVEMAC" Type="varchar" MaxLength="20" />
+    <Property Name="EDITMAC" Type="varchar" MaxLength="20" />
+    <Property Name="SAVEIP" Type="varchar" MaxLength="20" />
+    <Property Name="EDITIP" Type="varchar" MaxLength="20" />
+    <Property Name="IDX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ADISOYADI" Type="nvarchar" MaxLength="150" />
+    <Property Name="PERSONELID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLLOG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ISLEMSAYFASI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISLEMTURU" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISLEMINID" Type="int" />
+    <Property Name="TARIH" Type="date" />
+    <Property Name="SAAT" Type="time" Precision="7" />
+    <Property Name="KULLANICIADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="KULLANICIID" Type="int" />
+    <Property Name="IP" Type="nvarchar" MaxLength="50" />
+    <Property Name="MAC" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLMALZBIRIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BIRIMADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLMALZBOLUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BOLUMADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLMALZDEPO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DEPOADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLMALZEMELER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="UFKOD" Type="nvarchar" MaxLength="100" />
+    <Property Name="OEMKOD" Type="nvarchar" MaxLength="100" />
+    <Property Name="MALZEMEADI" Type="nvarchar" MaxLength="100" />
+    <Property Name="DIGERADI" Type="nvarchar" MaxLength="100" />
+    <Property Name="KULLANIMYERI" Type="nvarchar" MaxLength="250" />
+    <Property Name="BIRIMID" Type="int" />
+    <Property Name="GRUPID" Type="int" />
+    <Property Name="GRUPID2" Type="int" />
+    <Property Name="KDVID" Type="int" />
+    <Property Name="BOLUMID" Type="int" />
+    <Property Name="RAFNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="GOZNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="BARKOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="TARIHKONTROL" Type="nvarchar" MaxLength="50" />
+    <Property Name="SERINOKONTROL" Type="nvarchar" MaxLength="50" />
+    <Property Name="KMKONTROL" Type="nvarchar" MaxLength="50" />
+    <Property Name="MALZEMEFOTO" Type="nvarchar" MaxLength="50" />
+    <Property Name="KAYITTIPIID" Type="int" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="GIRIS" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CIKIS" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KALAN" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLMALZGRUP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MALZEMEGRUP" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLMALZGRUP2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MALZEMEGRUP2" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLMALZKDV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KDVGRUP" Type="nvarchar" MaxLength="50" />
+    <Property Name="KDVORAN" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEDATE" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLMALZMARKA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="MALZMARKA" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLMENU">
+    <Key>
+      <PropertyRef Name="IDX" />
+    </Key>
+    <Property Name="ID" Type="int" />
+    <Property Name="BASLIK" Type="varchar" MaxLength="16" />
+    <Property Name="KOMUTADI" Type="varchar" MaxLength="24" />
+    <Property Name="IDX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBLPERIZINYILLARI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YIL" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TBLPERSEGITIMDRM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EGITIMDURUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLPERSEHLIYET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EHLIYET" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLPERSIZINDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PERSONELID" Type="int" />
+    <Property Name="PERSONELIZINID" Type="int" />
+    <Property Name="IZINYILI" Type="int" />
+    <Property Name="IZINHAKKI" Type="int" />
+    <Property Name="KULLANILANIZIN" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLPERSKURUMGOREV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KURUMGOREV" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLPERSMESAI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PERSID" Type="int" />
+    <Property Name="MESAITARIHI" Type="datetime2" Precision="7" />
+    <Property Name="MESAISAATI" Type="int" />
+    <Property Name="ACIKLAMA" Type="nvarchar" MaxLength="250" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITDATE" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLPERSONEL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="TCKIMLIKNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SICILNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SOYADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADISOYADI" Type="nvarchar" MaxLength="100" />
+    <Property Name="UNVANID" Type="int" />
+    <Property Name="GOREVUNVANID" Type="int" />
+    <Property Name="EGITIMID" Type="int" />
+    <Property Name="PERSISTIHDAMIID" Type="int" />
+    <Property Name="EHLIYETID" Type="int" />
+    <Property Name="EHLVERTARIH" Type="nvarchar" MaxLength="50" />
+    <Property Name="BELDBIRIMIID" Type="int" />
+    <Property Name="BELDMUDURLUKID" Type="int" />
+    <Property Name="GOREVYERI" Type="nvarchar" MaxLength="50" />
+    <Property Name="KANGRUPID" Type="int" />
+    <Property Name="YETKILIIMZAID" Type="int" />
+    <Property Name="IKMADRES" Type="nvarchar" MaxLength="200" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="CEPTELEFON" Type="nvarchar" MaxLength="50" />
+    <Property Name="CEPTELEFON2" Type="nvarchar" MaxLength="50" />
+    <Property Name="COCUKKIZ" Type="int" />
+    <Property Name="COCUKERKEK" Type="int" />
+    <Property Name="COCUKTOPLAM" Type="int" />
+    <Property Name="SIRANO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="PERSDURUMID" Type="int" />
+    <Property Name="IZINTOPLAMI" Type="int" />
+    <Property Name="KULLANILANIZIN" Type="int" />
+    <Property Name="KALANIZIN" Type="int" />
+    <Property Name="ISEGIRISTARIHI" Type="datetime" />
+    <Property Name="DOGUMTARIHI" Type="datetime" />
+    <Property Name="PARAFTANIM" Type="nvarchar" MaxLength="50" />
+    <Property Name="RESIM" Type="nvarchar" MaxLength="50" />
+    <Property Name="RESIMPER" Type="image" />
+  </EntityType>
+  <EntityType Name="TBLPERSONELDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DURUM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLPERSONELISTIHDAMDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLPERSONELIZIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PERSID" Type="int" />
+    <Property Name="IZINTURU" Type="nvarchar" MaxLength="50" />
+    <Property Name="IZINYILLARI" Type="nvarchar" MaxLength="100" />
+    <Property Name="IZINSURESI" Type="nvarchar" MaxLength="50" />
+    <Property Name="BASLANGICTARIHI" Type="datetime2" Precision="7" />
+    <Property Name="BASLANGICSAATI" Type="datetime" />
+    <Property Name="BITISTARIHI" Type="datetime2" Precision="7" />
+    <Property Name="BITISSAATI" Type="datetime" />
+    <Property Name="IZINGUNSAY" Type="nvarchar" MaxLength="50" />
+    <Property Name="GOREVEBASTARIH" Type="datetime2" Precision="7" />
+    <Property Name="IZINDEBULADRES" Type="nvarchar" MaxLength="150" />
+    <Property Name="ONAYTARIH" Type="datetime2" Precision="7" />
+    <Property Name="IZINDURUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="SBMUDURID" Type="int" />
+    <Property Name="DAIREBSKID" Type="int" />
+    <Property Name="INSANDAIREBSKID" Type="int" />
+    <Property Name="GENELSEKYRDID" Type="int" />
+    <Property Name="MUDURYERINE" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLPERSUNVAN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UNVAN" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLPERTOPLANTI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YAZIISLERISRMLS" Type="int" />
+    <Property Name="ATOLYESRMLS" Type="int" />
+    <Property Name="AMBARSRMLS" Type="int" />
+    <Property Name="ISMAKINASISRMLS" Type="int" />
+    <Property Name="IKMALBIRIMSRMLS" Type="int" />
+    <Property Name="AKARYKTSRMLS" Type="int" />
+    <Property Name="KAYNAKISTANYONSEF" Type="int" />
+    <Property Name="KAMYONTAMIRUSTABAS" Type="int" />
+    <Property Name="OTOLASTIKUSTABASI" Type="int" />
+    <Property Name="AMBARAYNIYATSRMLS" Type="int" />
+    <Property Name="TOPLANTITARIHI" Type="date" />
+    <Property Name="TOPLANTIYONETICISI" Type="int" />
+    <Property Name="TOPLANTIKONUSU" Type="nvarchar" MaxLength="250" />
+    <Property Name="DAIREBASK_KODU" Type="nvarchar" MaxLength="50" />
+    <Property Name="RAPORNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="TOPLANTISURESI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SONRAKITOPLANTITARIHI" Type="date" />
+    <Property Name="GUNDEMMADDELERI" Type="nvarchar" MaxLength="250" />
+    <Property Name="KARARACIKLAMASI" Type="nvarchar" MaxLength="250" />
+    <Property Name="ELEKTRIKSRMLS" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLSABITLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SABITACIKLAMA" Type="nvarchar" MaxLength="50" />
+    <Property Name="SABITYERI" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLTALEP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="TARIH" Type="datetime2" Precision="7" />
+    <Property Name="SAAT" Type="datetime2" Precision="7" />
+    <Property Name="BELGESAYI" Type="nvarchar" MaxLength="50" />
+    <Property Name="BELGEKONU" Type="nvarchar" MaxLength="50" />
+    <Property Name="BELGETARIH" Type="datetime" />
+    <Property Name="ISINADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISINTURUMIKTARI" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISINYAPYERI" Type="nvarchar" MaxLength="50" />
+    <Property Name="BUTCETERTIBI" Type="nvarchar" MaxLength="50" />
+    <Property Name="IHALEUSULU" Type="nvarchar" MaxLength="50" />
+    <Property Name="YAKLASIKMALIYET" Type="nvarchar" MaxLength="50" />
+    <Property Name="KULLODENEKTUTAR" Type="nvarchar" MaxLength="50" />
+    <Property Name="ATOLYESEFID" Type="int" />
+    <Property Name="DEPOYETKILIID" Type="int" />
+    <Property Name="SORUMLUID" Type="int" />
+    <Property Name="MUDURID" Type="int" />
+    <Property Name="DAIREBSKID" Type="int" />
+    <Property Name="GENELSEKYRDID" Type="int" />
+    <Property Name="GENELSEKRETERID" Type="int" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="BILGINOTU" Type="nvarchar" MaxLength="100" />
+    <Property Name="TEKLIFID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLTALEPFIS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ISEMRIID" Type="int" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="TARIH" Type="datetime2" Precision="7" />
+    <Property Name="SAAT" Type="datetime2" Precision="7" />
+    <Property Name="FIRMAID" Type="int" />
+    <Property Name="FISTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TALEPDURUMID" Type="int" />
+    <Property Name="TALEPIPTALACIKLAMA" Type="nvarchar" MaxLength="150" />
+    <Property Name="TALEPEDENUSTAID" Type="int" />
+    <Property Name="ATOLYESEFID" Type="int" />
+    <Property Name="DEPOYETKILIID" Type="int" />
+    <Property Name="MUDURID" Type="int" />
+    <Property Name="MUDONAYZAMAN" Type="datetime2" Precision="7" />
+    <Property Name="TALEPKAYITID" Type="int" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLTALEPFISHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TALEPFISID" Type="int" />
+    <Property Name="MALZEMEID" Type="int" />
+    <Property Name="MALZACIKLAMA" Type="nvarchar" MaxLength="150" />
+    <Property Name="BIRIMID" Type="int" />
+    <Property Name="ISTENENMIKTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="MIKTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TUTAR" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLTALEPHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TALEPID" Type="int" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="MALZEMEID" Type="int" />
+    <Property Name="MALZACIKLAMA" Type="nvarchar" MaxLength="150" />
+    <Property Name="BIRIMID" Type="int" />
+    <Property Name="MIKTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TALEPFISID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLTALEPTEKNIKSART">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TALEPID" Type="int" />
+    <Property Name="SIRANO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ACIKLAMA" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TBLTASITGOREV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="PLAKAID" Type="int" />
+    <Property Name="SOFORID" Type="int" />
+    <Property Name="BIRIMID" Type="int" />
+    <Property Name="KURUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="GOREVTURU" Type="nvarchar" MaxLength="50" />
+    <Property Name="GIDILECEKYER" Type="nvarchar" MaxLength="50" />
+    <Property Name="CIKISZAMANI" Type="datetime2" Precision="7" />
+    <Property Name="CIKISTARIH" Type="datetime" />
+    <Property Name="CIKISSAAT" Type="datetime" />
+    <Property Name="CIKISKM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DONUSZAMANI" Type="datetime2" Precision="7" />
+    <Property Name="DONUSTARIH" Type="datetime" />
+    <Property Name="DONUSSAAT" Type="datetime" />
+    <Property Name="DONUSKM" Type="nvarchar" MaxLength="50" />
+    <Property Name="MESAIBITISSAATI" Type="datetime2" Precision="7" />
+    <Property Name="GUNUNADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="MESAIMIKTARI" Type="nvarchar" MaxLength="50" />
+    <Property Name="MUDURID" Type="int" />
+    <Property Name="MUDONAYZAMAN" Type="nvarchar" MaxLength="1" />
+    <Property Name="BIRIMAMIRIID" Type="int" />
+    <Property Name="GOREVGRUPID" Type="int" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLTASITPERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TASITID" Type="int" />
+    <Property Name="PERSONELID" Type="int" />
+    <Property Name="UNVANID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLTEKLIF">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="TARIH" Type="datetime2" Precision="7" />
+    <Property Name="SAAT" Type="datetime2" Precision="7" />
+    <Property Name="TEKLIFKONUSU" Type="nvarchar" MaxLength="50" />
+    <Property Name="KAZANANFIRMAID" Type="nvarchar" MaxLength="50" />
+    <Property Name="FATURATARIHI" Type="datetime2" Precision="7" />
+    <Property Name="FATURANO" Type="nvarchar" MaxLength="50" />
+    <Property Name="FATURATUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="KDVTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TOPLAMTUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FATTUTARYAZIYLA" Type="nvarchar" MaxLength="100" />
+    <Property Name="SAKARARTARIHI" Type="datetime2" Precision="7" />
+    <Property Name="SAKARARNO" Type="int" />
+    <Property Name="IMZABIRIMAMIRIID" Type="int" />
+    <Property Name="IMZAMUDURID" Type="int" />
+    <Property Name="DAIREBSKID" Type="int" />
+    <Property Name="OLURILGISI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="FIRMA1ID" Type="int" />
+    <Property Name="FIRMA2ID" Type="int" />
+    <Property Name="FIRMA3ID" Type="int" />
+    <Property Name="FIRMA4ID" Type="int" />
+    <Property Name="FIRMA5ID" Type="int" />
+    <Property Name="FIRMA6ID" Type="int" />
+    <Property Name="FIRMA7ID" Type="int" />
+    <Property Name="FIRMA8ID" Type="int" />
+    <Property Name="TALEPID" Type="int" />
+    <Property Name="KOMUYE1ID" Type="int" />
+    <Property Name="KOMUYE2ID" Type="int" />
+    <Property Name="KOMBSKID" Type="int" />
+    <Property Name="AITOLDBIRIM" Type="int" />
+    <Property Name="KESINLESTIR" Type="nvarchar" MaxLength="50" />
+    <Property Name="PIYASAUYE1ID" Type="int" />
+    <Property Name="PIYASAUYE2ID" Type="int" />
+    <Property Name="PIYASABSKID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLTEKLIFHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TEKLIFID" Type="int" />
+    <Property Name="ARACID" Type="int" />
+    <Property Name="MALZEMEID" Type="int" />
+    <Property Name="MALZACIKLAMA" Type="nvarchar" MaxLength="100" />
+    <Property Name="BIRIMID" Type="int" />
+    <Property Name="MIKTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="MARKA" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="BIRIMFIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA1ID" Type="int" />
+    <Property Name="F1BIRIMFIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="F1TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA2ID" Type="int" />
+    <Property Name="F2BIRIMFIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="F2TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA3ID" Type="int" />
+    <Property Name="F3BIRIMFIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="F3TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA4ID" Type="int" />
+    <Property Name="F4BIRIMFIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="F4TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA5ID" Type="int" />
+    <Property Name="F5BIRIMFIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="F5TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA6ID" Type="int" />
+    <Property Name="F6BIRIMFIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="F6TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA7ID" Type="int" />
+    <Property Name="F7BIRIMFIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="F7TUTAR" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA8ID" Type="int" />
+    <Property Name="F8BIRIMFIYAT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="F8TUTAR" Type="decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLTEKLIFIDARISART">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TEKLIFID" Type="nvarchar" MaxLength="50" />
+    <Property Name="SIRANO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ACIKLAMA" Type="text" />
+  </EntityType>
+  <EntityType Name="TBLTEKNIKSART">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ISINADI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="SAVEDATE" Type="datetime2" Precision="7" />
+    <Property Name="EDITUSER" Type="nvarchar" MaxLength="50" />
+    <Property Name="EDITDATE" Type="datetime2" Precision="7" />
+    <Property Name="SAVEMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITMAC" Type="nvarchar" MaxLength="1" />
+    <Property Name="SAVEIP" Type="nvarchar" MaxLength="1" />
+    <Property Name="EDITIP" Type="nvarchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TBLTEKNIKSARTHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TEKNIKID" Type="int" />
+    <Property Name="SIRANO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ACIKLAMA" Type="nvarchar" MaxLength="250" />
+    <Property Name="DURUM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLVARYOK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="ADI" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TBLYAKITKARTI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KARTNO" Type="int" />
+    <Property Name="TCNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SOFORADISOYADI" Type="nvarchar" MaxLength="150" />
+    <Property Name="CALISTIGIBIRIM" Type="nvarchar" MaxLength="150" />
+    <Property Name="CALISTIGIMUDURLUK" Type="nvarchar" MaxLength="150" />
+    <Property Name="KIMLIKONYUZU" Type="image" />
+    <Property Name="YUKLEYICIFIRMMA" Type="nvarchar" MaxLength="150" />
+    <Property Name="TELEFON" Type="nvarchar" MaxLength="20" />
+    <Property Name="TESLIMALAN" Type="nvarchar" MaxLength="150" />
+    <Property Name="TESLIMALANUNVAN" Type="nvarchar" MaxLength="150" />
+    <Property Name="ADRES" Type="text" />
+    <Property Name="ACIKLAMA" Type="text" />
+    <Property Name="TESLIMEDEN" Type="nvarchar" MaxLength="150" />
+    <Property Name="TESLIMEDENUNVAN" Type="nvarchar" MaxLength="150" />
+    <Property Name="SICILNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SURUCUBELGE" Type="nvarchar" MaxLength="50" />
+    <Property Name="TARIH" Type="date" />
+  </EntityType>
+  <EntityType Name="TBLYAKITKONTFORM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="PLAKA" Type="nvarchar" MaxLength="50" />
+    <Property Name="EBYSTARIH" Type="datetime2" Precision="7" />
+    <Property Name="EBYSSAYI" Type="nvarchar" MaxLength="50" />
+    <Property Name="GIRISZAMAN" Type="datetime2" Precision="7" />
+    <Property Name="CIKISZAMAN" Type="datetime2" Precision="7" />
+    <Property Name="BIRIMID" Type="int" />
+    <Property Name="MUDURLUKID" Type="int" />
+    <Property Name="SOFOROPERATOR" Type="nvarchar" MaxLength="50" />
+    <Property Name="ISTASYONPERSID" Type="int" />
+    <Property Name="ILGILIBIRIMPERSID" Type="int" />
+    <Property Name="OTOMASYONPERSID" Type="int" />
+  </EntityType>
+  <EntityType Name="TBLYAZIEKLERI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ACIKLAMA" Type="nvarchar" MaxLength="50" />
+    <Property Name="BIRIMTIPI" Type="int" />
+    <Property Name="DURUM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TBLYETKILIMZA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BELBSKNID" Type="int" />
+    <Property Name="GENELSKRTRID" Type="int" />
+    <Property Name="GENELSKRTRYRDMCID" Type="int" />
+    <Property Name="DAIREBSKNID" Type="int" />
+    <Property Name="SUBEMDRID" Type="int" />
+    <Property Name="ATOLYESEFID" Type="int" />
+    <Property Name="DEPOYETKILID" Type="int" />
+    <Property Name="TKLFSORUMLUID" Type="int" />
+    <Property Name="PYSARSTRMAUYE1ID" Type="int" />
+    <Property Name="PYSARSTRMAUYE2ID" Type="int" />
+    <Property Name="PYSARSTRMABSKNID" Type="int" />
+    <Property Name="KABULKOMUYE1ID" Type="int" />
+    <Property Name="KABULKOMUYE2ID" Type="int" />
+    <Property Name="KABULKOMBASKANID" Type="int" />
+    <Property Name="YAGSORUMLUSU" Type="int" />
+  </EntityType>
+  <EntityContainer Name="belediyeEntitiesStoreContainer">
+    <EntitySet Name="FAALIYET" EntityType="Self.FAALIYET" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HAKEDISAKARYAKIT" EntityType="Self.HAKEDISAKARYAKIT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HAKEDISYDKARAC" EntityType="Self.HAKEDISYDKARAC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAHARACDURUM" EntityType="Self.TAHARACDURUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAHARACHGS" EntityType="Self.TAHARACHGS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAHARACTIPI" EntityType="Self.TAHARACTIPI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAHARIZANEDENI" EntityType="Self.TAHARIZANEDENI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAHBAKIMDERECE" EntityType="Self.TAHBAKIMDERECE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAHBAKIMTURU" EntityType="Self.TAHBAKIMTURU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAHMODELYILI" EntityType="Self.TAHMODELYILI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACGRUBU" EntityType="Self.TBLARACGRUBU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACGRUBU2" EntityType="Self.TBLARACGRUBU2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACIHALEGRUP" EntityType="Self.TBLARACIHALEGRUP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACLAR" EntityType="Self.TBLARACLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACMARKA" EntityType="Self.TBLARACMARKA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACMESTKP" EntityType="Self.TBLARACMESTKP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACRESIM" EntityType="Self.TBLARACRESIM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACTRFCEZA" EntityType="Self.TBLARACTRFCEZA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACYEDEKALIM" EntityType="Self.TBLARACYEDEKALIM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLARACZIMMET" EntityType="Self.TBLARACZIMMET" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLATOLYEBOLUM" EntityType="Self.TBLATOLYEBOLUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLATOLYEUSTALAR" EntityType="Self.TBLATOLYEUSTALAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLAYARLAR" EntityType="Self.TBLAYARLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLBAKIMGRUBU" EntityType="Self.TBLBAKIMGRUBU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLBAKIMTANIM" EntityType="Self.TBLBAKIMTANIM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLBAKIMYERI" EntityType="Self.TBLBAKIMYERI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLBELDBIRIMLER" EntityType="Self.TBLBELDBIRIMLER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLBELDMUDURLUK" EntityType="Self.TBLBELDMUDURLUK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLBIRIMYETKILILERI" EntityType="Self.TBLBIRIMYETKILILERI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLDEPOFIS" EntityType="Self.TBLDEPOFIS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLDEPOFISHRKT" EntityType="Self.TBLDEPOFISHRKT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLFIRMALAR" EntityType="Self.TBLFIRMALAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLFORMKULLANICI" EntityType="Self.TBLFORMKULLANICI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLHAKARACHRKT" EntityType="Self.TBLHAKARACHRKT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLHAKEDISANA" EntityType="Self.TBLHAKEDISANA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLHAKEDISARACLAR" EntityType="Self.TBLHAKEDISARACLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLHAKEDISTIP" EntityType="Self.TBLHAKEDISTIP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLHAKEDISTIPHRKT" EntityType="Self.TBLHAKEDISTIPHRKT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLIDARISARTHRKT" EntityType="Self.TBLIDARISARTHRKT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLIDARISARTNAME" EntityType="Self.TBLIDARISARTNAME" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLIHALELER" EntityType="Self.TBLIHALELER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLIHLHAKEDIS" EntityType="Self.TBLIHLHAKEDIS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLISEMIRDURUM" EntityType="Self.TBLISEMIRDURUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLISEMRI" EntityType="Self.TBLISEMRI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLISEMRIBAKIMLAR" EntityType="Self.TBLISEMRIBAKIMLAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLISEMRIEKRYNL" EntityType="Self.TBLISEMRIEKRYNL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLISLEMTIPI" EntityType="Self.TBLISLEMTIPI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLKULLANICILAR" EntityType="Self.TBLKULLANICILAR" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLLOG" EntityType="Self.TBLLOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMALZBIRIM" EntityType="Self.TBLMALZBIRIM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMALZBOLUM" EntityType="Self.TBLMALZBOLUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMALZDEPO" EntityType="Self.TBLMALZDEPO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMALZEMELER" EntityType="Self.TBLMALZEMELER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMALZGRUP" EntityType="Self.TBLMALZGRUP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMALZGRUP2" EntityType="Self.TBLMALZGRUP2" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMALZKDV" EntityType="Self.TBLMALZKDV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMALZMARKA" EntityType="Self.TBLMALZMARKA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLMENU" EntityType="Self.TBLMENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERIZINYILLARI" EntityType="Self.TBLPERIZINYILLARI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSEGITIMDRM" EntityType="Self.TBLPERSEGITIMDRM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSEHLIYET" EntityType="Self.TBLPERSEHLIYET" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSIZINDURUM" EntityType="Self.TBLPERSIZINDURUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSKURUMGOREV" EntityType="Self.TBLPERSKURUMGOREV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSMESAI" EntityType="Self.TBLPERSMESAI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSONEL" EntityType="Self.TBLPERSONEL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSONELDURUM" EntityType="Self.TBLPERSONELDURUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSONELISTIHDAMDURUM" EntityType="Self.TBLPERSONELISTIHDAMDURUM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSONELIZIN" EntityType="Self.TBLPERSONELIZIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERSUNVAN" EntityType="Self.TBLPERSUNVAN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLPERTOPLANTI" EntityType="Self.TBLPERTOPLANTI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLSABITLER" EntityType="Self.TBLSABITLER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTALEP" EntityType="Self.TBLTALEP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTALEPFIS" EntityType="Self.TBLTALEPFIS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTALEPFISHRKT" EntityType="Self.TBLTALEPFISHRKT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTALEPHRKT" EntityType="Self.TBLTALEPHRKT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTALEPTEKNIKSART" EntityType="Self.TBLTALEPTEKNIKSART" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTASITGOREV" EntityType="Self.TBLTASITGOREV" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTASITPERS" EntityType="Self.TBLTASITPERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTEKLIF" EntityType="Self.TBLTEKLIF" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTEKLIFHRKT" EntityType="Self.TBLTEKLIFHRKT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTEKLIFIDARISART" EntityType="Self.TBLTEKLIFIDARISART" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTEKNIKSART" EntityType="Self.TBLTEKNIKSART" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLTEKNIKSARTHRKT" EntityType="Self.TBLTEKNIKSARTHRKT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLVARYOK" EntityType="Self.TBLVARYOK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLYAKITKARTI" EntityType="Self.TBLYAKITKARTI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLYAKITKONTFORM" EntityType="Self.TBLYAKITKONTFORM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLYAZIEKLERI" EntityType="Self.TBLYAZIEKLERI" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLYETKILIMZA" EntityType="Self.TBLYETKILIMZA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBLFIRMASEKTOR" EntityType="Self.TBLFIRMASEKTOR" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TBLFIRMASEKTOR].[ID] AS [ID], 
+    [TBLFIRMASEKTOR].[SEKTORADI] AS [SEKTORADI], 
+    [TBLFIRMASEKTOR].[SAVEUSER] AS [SAVEUSER], 
+    [TBLFIRMASEKTOR].[SAVEDATE] AS [SAVEDATE], 
+    [TBLFIRMASEKTOR].[EDITUSER] AS [EDITUSER], 
+    [TBLFIRMASEKTOR].[EDITDATE] AS [EDITDATE], 
+    [TBLFIRMASEKTOR].[SAVEMAC] AS [SAVEMAC], 
+    [TBLFIRMASEKTOR].[EDITMAC] AS [EDITMAC], 
+    [TBLFIRMASEKTOR].[SAVEIP] AS [SAVEIP], 
+    [TBLFIRMASEKTOR].[EDITIP] AS [EDITIP]
+    FROM [dbo].[TBLFIRMASEKTOR] AS [TBLFIRMASEKTOR]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

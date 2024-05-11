@@ -1,0 +1,1677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="belediyeEntitiesStoreContainer" CdmEntityContainer="bellEntities">
+    <EntitySetMapping Name="FAALIYET">
+      <EntityTypeMapping TypeName="belediyeEntities.FAALIYET">
+        <MappingFragment StoreEntitySet="FAALIYET">
+          <ScalarProperty Name="AYI" ColumnName="AYI" />
+          <ScalarProperty Name="SUBEMUDURU" ColumnName="SUBEMUDURU" />
+          <ScalarProperty Name="RESMIKIRALIKBENZIN" ColumnName="RESMIKIRALIKBENZIN" />
+          <ScalarProperty Name="RESMIKIRALIKMOTORIN" ColumnName="RESMIKIRALIKMOTORIN" />
+          <ScalarProperty Name="YAKITBENZIN" ColumnName="YAKITBENZIN" />
+          <ScalarProperty Name="YAKITMOTORIN" ColumnName="YAKITMOTORIN" />
+          <ScalarProperty Name="BAIKHIZMET" ColumnName="BAIKHIZMET" />
+          <ScalarProperty Name="BAIKRESMI" ColumnName="BAIKRESMI" />
+          <ScalarProperty Name="MUAYENE" ColumnName="MUAYENE" />
+          <ScalarProperty Name="ZORUNLUTRFKSIGORTA" ColumnName="ZORUNLUTRFKSIGORTA" />
+          <ScalarProperty Name="YAGBAKIM" ColumnName="YAGBAKIM" />
+          <ScalarProperty Name="ARACBAKIMDIS" ColumnName="ARACBAKIMDIS" />
+          <ScalarProperty Name="ARACBAKIMARAZI" ColumnName="ARACBAKIMARAZI" />
+          <ScalarProperty Name="ARACBAKIMATOLYE" ColumnName="ARACBAKIMATOLYE" />
+          <ScalarProperty Name="YILI" ColumnName="YILI" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HAKEDISAKARYAKIT">
+      <EntityTypeMapping TypeName="belediyeEntities.HAKEDISAKARYAKIT">
+        <MappingFragment StoreEntitySet="HAKEDISAKARYAKIT">
+          <ScalarProperty Name="PLAKA" ColumnName="PLAKA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HAKEDISYDKARAC">
+      <EntityTypeMapping TypeName="belediyeEntities.HAKEDISYDKARAC">
+        <MappingFragment StoreEntitySet="HAKEDISYDKARAC">
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="SIRKETID" ColumnName="SIRKETID" />
+          <ScalarProperty Name="CIKISTARIHI" ColumnName="CIKISTARIHI" />
+          <ScalarProperty Name="BASLAMATARIHI" ColumnName="BASLAMATARIHI" />
+          <ScalarProperty Name="PLAKA" ColumnName="PLAKA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAHARACDURUM">
+      <EntityTypeMapping TypeName="belediyeEntities.TAHARACDURUM">
+        <MappingFragment StoreEntitySet="TAHARACDURUM">
+          <ScalarProperty Name="ARACDURUM" ColumnName="ARACDURUM" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAHARACHGS">
+      <EntityTypeMapping TypeName="belediyeEntities.TAHARACHGS">
+        <MappingFragment StoreEntitySet="TAHARACHGS">
+          <ScalarProperty Name="ILGILINOT" ColumnName="ILGILINOT" />
+          <ScalarProperty Name="IPTALTARIH" ColumnName="IPTALTARIH" />
+          <ScalarProperty Name="GUNCELTARIH" ColumnName="GUNCELTARIH" />
+          <ScalarProperty Name="GUNCELARAC" ColumnName="GUNCELARAC" />
+          <ScalarProperty Name="HGSETIKETNO" ColumnName="HGSETIKETNO" />
+          <ScalarProperty Name="HGSTARIH" ColumnName="HGSTARIH" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAHARACTIPI">
+      <EntityTypeMapping TypeName="belediyeEntities.TAHARACTIPI">
+        <MappingFragment StoreEntitySet="TAHARACTIPI">
+          <ScalarProperty Name="ARACTIPI" ColumnName="ARACTIPI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAHARIZANEDENI">
+      <EntityTypeMapping TypeName="belediyeEntities.TAHARIZANEDENI">
+        <MappingFragment StoreEntitySet="TAHARIZANEDENI">
+          <ScalarProperty Name="ARIZANEDENI" ColumnName="ARIZANEDENI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAHBAKIMDERECE">
+      <EntityTypeMapping TypeName="belediyeEntities.TAHBAKIMDERECE">
+        <MappingFragment StoreEntitySet="TAHBAKIMDERECE">
+          <ScalarProperty Name="BAKIMDERECE" ColumnName="BAKIMDERECE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAHBAKIMTURU">
+      <EntityTypeMapping TypeName="belediyeEntities.TAHBAKIMTURU">
+        <MappingFragment StoreEntitySet="TAHBAKIMTURU">
+          <ScalarProperty Name="BAKIMTURU" ColumnName="BAKIMTURU" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAHMODELYILI">
+      <EntityTypeMapping TypeName="belediyeEntities.TAHMODELYILI">
+        <MappingFragment StoreEntitySet="TAHMODELYILI">
+          <ScalarProperty Name="YILI" ColumnName="YILI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACGRUBU">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACGRUBU">
+        <MappingFragment StoreEntitySet="TBLARACGRUBU">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="GRUPADI" ColumnName="GRUPADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACGRUBU2">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACGRUBU2">
+        <MappingFragment StoreEntitySet="TBLARACGRUBU2">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="GRUPADI" ColumnName="GRUPADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACIHALEGRUP">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACIHALEGRUP">
+        <MappingFragment StoreEntitySet="TBLARACIHALEGRUP">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="IHALEADI" ColumnName="IHALEADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACLAR">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACLAR">
+        <MappingFragment StoreEntitySet="TBLARACLAR">
+          <ScalarProperty Name="ARACIHALEGRUPID" ColumnName="ARACIHALEGRUPID" />
+          <ScalarProperty Name="TRAFIKSGORTA2" ColumnName="TRAFIKSGORTA2" />
+          <ScalarProperty Name="EGZOZKONTROL" ColumnName="EGZOZKONTROL" />
+          <ScalarProperty Name="HGSVARYOK" ColumnName="HGSVARYOK" />
+          <ScalarProperty Name="YENIDEGERTARIH" ColumnName="YENIDEGERTARIH" />
+          <ScalarProperty Name="HIDROLIKYAGKM" ColumnName="HIDROLIKYAGKM" />
+          <ScalarProperty Name="DIFERANSIYELYAGKM" ColumnName="DIFERANSIYELYAGKM" />
+          <ScalarProperty Name="SANZIMANYAGKM" ColumnName="SANZIMANYAGKM" />
+          <ScalarProperty Name="MOTORYAGKM" ColumnName="MOTORYAGKM" />
+          <ScalarProperty Name="GENELBAKIMKM" ColumnName="GENELBAKIMKM" />
+          <ScalarProperty Name="PARABIRIMI" ColumnName="PARABIRIMI" />
+          <ScalarProperty Name="YENIDEGERI" ColumnName="YENIDEGERI" />
+          <ScalarProperty Name="GUNCELDEGERI" ColumnName="GUNCELDEGERI" />
+          <ScalarProperty Name="SIRANO" ColumnName="SIRANO" />
+          <ScalarProperty Name="TAKIPVARYOKID" ColumnName="TAKIPVARYOKID" />
+          <ScalarProperty Name="ARACRESIM2" ColumnName="ARACRESIM2" />
+          <ScalarProperty Name="ARACRESIM1" ColumnName="ARACRESIM1" />
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="ILGILINOT" ColumnName="ILGILINOT" />
+          <ScalarProperty Name="GOREVDURUM" ColumnName="GOREVDURUM" />
+          <ScalarProperty Name="GOREVBITIMTARIH" ColumnName="GOREVBITIMTARIH" />
+          <ScalarProperty Name="YEDEKANHTRACKLM" ColumnName="YEDEKANHTRACKLM" />
+          <ScalarProperty Name="YEDEKANAHTAR" ColumnName="YEDEKANAHTAR" />
+          <ScalarProperty Name="TKPVARYOK" ColumnName="TKPVARYOK" />
+          <ScalarProperty Name="ARACTIPIID" ColumnName="ARACTIPIID" />
+          <ScalarProperty Name="ARACDURUMID" ColumnName="ARACDURUMID" />
+          <ScalarProperty Name="STDYKYAKIT" ColumnName="STDYKYAKIT" />
+          <ScalarProperty Name="YKTYAKMATURU" ColumnName="YKTYAKMATURU" />
+          <ScalarProperty Name="YAKITID" ColumnName="YAKITID" />
+          <ScalarProperty Name="ARACGRUBU2ID" ColumnName="ARACGRUBU2ID" />
+          <ScalarProperty Name="ARACGRUBUID" ColumnName="ARACGRUBUID" />
+          <ScalarProperty Name="ARACKULPERSID" ColumnName="ARACKULPERSID" />
+          <ScalarProperty Name="TAHSISEDILENID" ColumnName="TAHSISEDILENID" />
+          <ScalarProperty Name="BELDMUDURLUKID" ColumnName="BELDMUDURLUKID" />
+          <ScalarProperty Name="BELDBIRIMID" ColumnName="BELDBIRIMID" />
+          <ScalarProperty Name="ARACFIRMAID" ColumnName="ARACFIRMAID" />
+          <ScalarProperty Name="BELGESERINO" ColumnName="BELGESERINO" />
+          <ScalarProperty Name="KASKO" ColumnName="KASKO" />
+          <ScalarProperty Name="TRAFIKSGORTA" ColumnName="TRAFIKSGORTA" />
+          <ScalarProperty Name="MUAYENEGECSUR" ColumnName="MUAYENEGECSUR" />
+          <ScalarProperty Name="DIGEROZELLIKLER" ColumnName="DIGEROZELLIKLER" />
+          <ScalarProperty Name="LASTIKEBADI" ColumnName="LASTIKEBADI" />
+          <ScalarProperty Name="YURUYENAKSAMI" ColumnName="YURUYENAKSAMI" />
+          <ScalarProperty Name="TEKERLEKADEDI" ColumnName="TEKERLEKADEDI" />
+          <ScalarProperty Name="BEYGIRGUCU" ColumnName="BEYGIRGUCU" />
+          <ScalarProperty Name="MOTORGUCU" ColumnName="MOTORGUCU" />
+          <ScalarProperty Name="SILINDIRHACMI" ColumnName="SILINDIRHACMI" />
+          <ScalarProperty Name="SASENO" ColumnName="SASENO" />
+          <ScalarProperty Name="MOTORNO" ColumnName="MOTORNO" />
+          <ScalarProperty Name="RENGI" ColumnName="RENGI" />
+          <ScalarProperty Name="TIPI" ColumnName="TIPI" />
+          <ScalarProperty Name="TICARIADI" ColumnName="TICARIADI" />
+          <ScalarProperty Name="CINSI" ColumnName="CINSI" />
+          <ScalarProperty Name="MODEL" ColumnName="MODEL" />
+          <ScalarProperty Name="MARKAID" ColumnName="MARKAID" />
+          <ScalarProperty Name="TESCILTARIHI" ColumnName="TESCILTARIHI" />
+          <ScalarProperty Name="ILKTESCILTARIHI" ColumnName="ILKTESCILTARIHI" />
+          <ScalarProperty Name="TESCILSIRANO" ColumnName="TESCILSIRANO" />
+          <ScalarProperty Name="ESKIPLAKA" ColumnName="ESKIPLAKA" />
+          <ScalarProperty Name="TAHSPLKTARIH" ColumnName="TAHSPLKTARIH" />
+          <ScalarProperty Name="TAHSPLAKA" ColumnName="TAHSPLAKA" />
+          <ScalarProperty Name="ARACACIKLAMA" ColumnName="ARACACIKLAMA" />
+          <ScalarProperty Name="PLAKA" ColumnName="PLAKA" />
+          <ScalarProperty Name="VERILDIGIILILCE" ColumnName="VERILDIGIILILCE" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACMARKA">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACMARKA">
+        <MappingFragment StoreEntitySet="TBLARACMARKA">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="ARACMARKA" ColumnName="ARACMARKA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACMESTKP">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACMESTKP">
+        <MappingFragment StoreEntitySet="TBLARACMESTKP">
+          <ScalarProperty Name="CALISMASURESI" ColumnName="CALISMASURESI" />
+          <ScalarProperty Name="TOPLAMKM" ColumnName="TOPLAMKM" />
+          <ScalarProperty Name="MESAIDISI" ColumnName="MESAIDISI" />
+          <ScalarProperty Name="MESAIICI" ColumnName="MESAIICI" />
+          <ScalarProperty Name="PLAKA" ColumnName="PLAKA" />
+          <ScalarProperty Name="TARIHSAAT" ColumnName="TARIHSAAT" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACRESIM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACRESIM">
+        <MappingFragment StoreEntitySet="TBLARACRESIM">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="ARACRESIMON" ColumnName="ARACRESIMON" />
+          <ScalarProperty Name="ARACRESIMARKA" ColumnName="ARACRESIMARKA" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACTRFCEZA">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACTRFCEZA">
+        <MappingFragment StoreEntitySet="TBLARACTRFCEZA">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="ILGILINOT" ColumnName="ILGILINOT" />
+          <ScalarProperty Name="ODEMEDURUM" ColumnName="ODEMEDURUM" />
+          <ScalarProperty Name="BELDMUDURLUKID" ColumnName="BELDMUDURLUKID" />
+          <ScalarProperty Name="BELDBIRIMID" ColumnName="BELDBIRIMID" />
+          <ScalarProperty Name="CEZATURU" ColumnName="CEZATURU" />
+          <ScalarProperty Name="CEZATUTARI" ColumnName="CEZATUTARI" />
+          <ScalarProperty Name="CEZAACIKLAMA" ColumnName="CEZAACIKLAMA" />
+          <ScalarProperty Name="CEZASAATI" ColumnName="CEZASAATI" />
+          <ScalarProperty Name="CEZATARIHI" ColumnName="CEZATARIHI" />
+          <ScalarProperty Name="FISNO" ColumnName="FISNO" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="KAYITTARIHI" ColumnName="KAYITTARIHI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACYEDEKALIM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACYEDEKALIM">
+        <MappingFragment StoreEntitySet="TBLARACYEDEKALIM">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="TESLIMEDENID" ColumnName="TESLIMEDENID" />
+          <ScalarProperty Name="FIRMAYETKILISI" ColumnName="FIRMAYETKILISI" />
+          <ScalarProperty Name="TESLIMALANID" ColumnName="TESLIMALANID" />
+          <ScalarProperty Name="ILGILINOT" ColumnName="ILGILINOT" />
+          <ScalarProperty Name="YEDEKARACMARKA" ColumnName="YEDEKARACMARKA" />
+          <ScalarProperty Name="YEDEKARAC" ColumnName="YEDEKARAC" />
+          <ScalarProperty Name="GIDENARACID" ColumnName="GIDENARACID" />
+          <ScalarProperty Name="DEGISIMSEBEBI" ColumnName="DEGISIMSEBEBI" />
+          <ScalarProperty Name="SAAT" ColumnName="SAAT" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLARACZIMMET">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLARACZIMMET">
+        <MappingFragment StoreEntitySet="TBLARACZIMMET">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="ILGILINOT" ColumnName="ILGILINOT" />
+          <ScalarProperty Name="BELDMUDURLUKID" ColumnName="BELDMUDURLUKID" />
+          <ScalarProperty Name="BELDBIRIMID" ColumnName="BELDBIRIMID" />
+          <ScalarProperty Name="ONCEKIARACI" ColumnName="ONCEKIARACI" />
+          <ScalarProperty Name="TAHSISEDILENID" ColumnName="TAHSISEDILENID" />
+          <ScalarProperty Name="ZIMMETALANID" ColumnName="ZIMMETALANID" />
+          <ScalarProperty Name="SAAT" ColumnName="SAAT" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLATOLYEBOLUM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLATOLYEBOLUM">
+        <MappingFragment StoreEntitySet="TBLATOLYEBOLUM">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="BOLUMADI" ColumnName="BOLUMADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLATOLYEUSTALAR">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLATOLYEUSTALAR">
+        <MappingFragment StoreEntitySet="TBLATOLYEUSTALAR">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="USTAADISOYADI" ColumnName="USTAADISOYADI" />
+          <ScalarProperty Name="ATOLYEID" ColumnName="ATOLYEID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLAYARLAR">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLAYARLAR">
+        <MappingFragment StoreEntitySet="TBLAYARLAR">
+          <ScalarProperty Name="PERSONEID" ColumnName="PERSONEID" />
+          <ScalarProperty Name="BIRIMADI" ColumnName="BIRIMADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLBAKIMGRUBU">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLBAKIMGRUBU">
+        <MappingFragment StoreEntitySet="TBLBAKIMGRUBU">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="GRUPADI" ColumnName="GRUPADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLBAKIMTANIM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLBAKIMTANIM">
+        <MappingFragment StoreEntitySet="TBLBAKIMTANIM">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="YAPILANBAKIM" ColumnName="YAPILANBAKIM" />
+          <ScalarProperty Name="BAKIMGRUBUID" ColumnName="BAKIMGRUBUID" />
+          <ScalarProperty Name="ATOLYEID" ColumnName="ATOLYEID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLBAKIMYERI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLBAKIMYERI">
+        <MappingFragment StoreEntitySet="TBLBAKIMYERI">
+          <ScalarProperty Name="ADI" ColumnName="ADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLBELDBIRIMLER">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLBELDBIRIMLER">
+        <MappingFragment StoreEntitySet="TBLBELDBIRIMLER">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="BELDBIRIMADI" ColumnName="BELDBIRIMADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLBELDMUDURLUK">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLBELDMUDURLUK">
+        <MappingFragment StoreEntitySet="TBLBELDMUDURLUK">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="BELDMUDURLUK" ColumnName="BELDMUDURLUK" />
+          <ScalarProperty Name="BELDBIRIMID" ColumnName="BELDBIRIMID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLBIRIMYETKILILERI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLBIRIMYETKILILERI">
+        <MappingFragment StoreEntitySet="TBLBIRIMYETKILILERI">
+          <ScalarProperty Name="YETKILIID" ColumnName="YETKILIID" />
+          <ScalarProperty Name="YETKIALANI" ColumnName="YETKIALANI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLDEPOFIS">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLDEPOFIS">
+        <MappingFragment StoreEntitySet="TBLDEPOFIS">
+          <ScalarProperty Name="GIRISICIKISYAPID" ColumnName="GIRISICIKISYAPID" />
+          <ScalarProperty Name="TALEPFISID" ColumnName="TALEPFISID" />
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="IMZADEPOYETKILIID" ColumnName="IMZADEPOYETKILIID" />
+          <ScalarProperty Name="TRANSDEPOGCID" ColumnName="TRANSDEPOGCID" />
+          <ScalarProperty Name="TRANSFERID" ColumnName="TRANSFERID" />
+          <ScalarProperty Name="GCKOD" ColumnName="GCKOD" />
+          <ScalarProperty Name="FISTUTAR" ColumnName="FISTUTAR" />
+          <ScalarProperty Name="TOPKDVTUTAR" ColumnName="TOPKDVTUTAR" />
+          <ScalarProperty Name="TOPTUTAR" ColumnName="TOPTUTAR" />
+          <ScalarProperty Name="ISLEMTIPIID" ColumnName="ISLEMTIPIID" />
+          <ScalarProperty Name="FIRMAID" ColumnName="FIRMAID" />
+          <ScalarProperty Name="ALANUSTAID" ColumnName="ALANUSTAID" />
+          <ScalarProperty Name="FISNO" ColumnName="FISNO" />
+          <ScalarProperty Name="SAAT" ColumnName="SAAT" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="ISEMRIID" ColumnName="ISEMRIID" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLDEPOFISHRKT">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLDEPOFISHRKT">
+        <MappingFragment StoreEntitySet="TBLDEPOFISHRKT">
+          <ScalarProperty Name="SONRAKIDEGKM" ColumnName="SONRAKIDEGKM" />
+          <ScalarProperty Name="DEGISIMKMSI" ColumnName="DEGISIMKMSI" />
+          <ScalarProperty Name="MALZURTTARIH" ColumnName="MALZURTTARIH" />
+          <ScalarProperty Name="MALZSERINO" ColumnName="MALZSERINO" />
+          <ScalarProperty Name="MALZMARKAID" ColumnName="MALZMARKAID" />
+          <ScalarProperty Name="DEPOID" ColumnName="DEPOID" />
+          <ScalarProperty Name="GCKOD" ColumnName="GCKOD" />
+          <ScalarProperty Name="SATIRTUTAR" ColumnName="SATIRTUTAR" />
+          <ScalarProperty Name="KDVTUTAR" ColumnName="KDVTUTAR" />
+          <ScalarProperty Name="KDVORAN" ColumnName="KDVORAN" />
+          <ScalarProperty Name="CIKISTUTAR" ColumnName="CIKISTUTAR" />
+          <ScalarProperty Name="GIRISTUTAR" ColumnName="GIRISTUTAR" />
+          <ScalarProperty Name="TUTAR" ColumnName="TUTAR" />
+          <ScalarProperty Name="FIYAT" ColumnName="FIYAT" />
+          <ScalarProperty Name="CIKISMIKTAR" ColumnName="CIKISMIKTAR" />
+          <ScalarProperty Name="GIRISMIKTAR" ColumnName="GIRISMIKTAR" />
+          <ScalarProperty Name="MIKTAR" ColumnName="MIKTAR" />
+          <ScalarProperty Name="BIRIMID" ColumnName="BIRIMID" />
+          <ScalarProperty Name="MALZACIKLAMA" ColumnName="MALZACIKLAMA" />
+          <ScalarProperty Name="MALZEMEID" ColumnName="MALZEMEID" />
+          <ScalarProperty Name="DEPOFISID" ColumnName="DEPOFISID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLFIRMALAR">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLFIRMALAR">
+        <MappingFragment StoreEntitySet="TBLFIRMALAR">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="ILGILINOT" ColumnName="ILGILINOT" />
+          <ScalarProperty Name="WEBADRES" ColumnName="WEBADRES" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CEPTELEFON" ColumnName="CEPTELEFON" />
+          <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
+          <ScalarProperty Name="VERGINO" ColumnName="VERGINO" />
+          <ScalarProperty Name="VERGIDAIRE" ColumnName="VERGIDAIRE" />
+          <ScalarProperty Name="FIRMAADRES" ColumnName="FIRMAADRES" />
+          <ScalarProperty Name="YETKILISI" ColumnName="YETKILISI" />
+          <ScalarProperty Name="FALIYETALANI" ColumnName="FALIYETALANI" />
+          <ScalarProperty Name="FIRMAADI" ColumnName="FIRMAADI" />
+          <ScalarProperty Name="SEKTORID" ColumnName="SEKTORID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLFORMKULLANICI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLFORMKULLANICI">
+        <MappingFragment StoreEntitySet="TBLFORMKULLANICI">
+          <ScalarProperty Name="KOMUTID" ColumnName="KOMUTID" />
+          <ScalarProperty Name="LISTELEME" ColumnName="LISTELEME" />
+          <ScalarProperty Name="GUNCELLEME" ColumnName="GUNCELLEME" />
+          <ScalarProperty Name="SİL" ColumnName="SİL" />
+          <ScalarProperty Name="KAYIT" ColumnName="KAYIT" />
+          <ScalarProperty Name="SALTOKUNUR" ColumnName="SALTOKUNUR" />
+          <ScalarProperty Name="KOMUTADI" ColumnName="KOMUTADI" />
+          <ScalarProperty Name="KULLANICIID" ColumnName="KULLANICIID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHAKARACHRKT">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLHAKARACHRKT">
+        <MappingFragment StoreEntitySet="TBLHAKARACHRKT">
+          <ScalarProperty Name="HAKANAID" ColumnName="HAKANAID" />
+          <ScalarProperty Name="YEDEKARACID" ColumnName="YEDEKARACID" />
+          <ScalarProperty Name="OTUZBIR" ColumnName="OTUZBIR" />
+          <ScalarProperty Name="OTUZ" ColumnName="OTUZ" />
+          <ScalarProperty Name="YIRMIDOKUZ" ColumnName="YIRMIDOKUZ" />
+          <ScalarProperty Name="YIRMISEKIZ" ColumnName="YIRMISEKIZ" />
+          <ScalarProperty Name="YIRMIYEDI" ColumnName="YIRMIYEDI" />
+          <ScalarProperty Name="YIRMIALTI" ColumnName="YIRMIALTI" />
+          <ScalarProperty Name="YIRMIBES" ColumnName="YIRMIBES" />
+          <ScalarProperty Name="YIRMIDORT" ColumnName="YIRMIDORT" />
+          <ScalarProperty Name="YIRMIUC" ColumnName="YIRMIUC" />
+          <ScalarProperty Name="YIRMIIKI" ColumnName="YIRMIIKI" />
+          <ScalarProperty Name="YIRMIBIR" ColumnName="YIRMIBIR" />
+          <ScalarProperty Name="YIRMI" ColumnName="YIRMI" />
+          <ScalarProperty Name="ONDOKUZ" ColumnName="ONDOKUZ" />
+          <ScalarProperty Name="ONSEKIZ" ColumnName="ONSEKIZ" />
+          <ScalarProperty Name="ONYEDI" ColumnName="ONYEDI" />
+          <ScalarProperty Name="ONALTI" ColumnName="ONALTI" />
+          <ScalarProperty Name="ONBES" ColumnName="ONBES" />
+          <ScalarProperty Name="ONDORT" ColumnName="ONDORT" />
+          <ScalarProperty Name="ONUC" ColumnName="ONUC" />
+          <ScalarProperty Name="ONIKI" ColumnName="ONIKI" />
+          <ScalarProperty Name="ONBIR" ColumnName="ONBIR" />
+          <ScalarProperty Name="ON" ColumnName="ON" />
+          <ScalarProperty Name="DOKUZ" ColumnName="DOKUZ" />
+          <ScalarProperty Name="SEKIZ" ColumnName="SEKIZ" />
+          <ScalarProperty Name="YEDI" ColumnName="YEDI" />
+          <ScalarProperty Name="ALTI" ColumnName="ALTI" />
+          <ScalarProperty Name="BES" ColumnName="BES" />
+          <ScalarProperty Name="DORT" ColumnName="DORT" />
+          <ScalarProperty Name="UC" ColumnName="UC" />
+          <ScalarProperty Name="IKI" ColumnName="IKI" />
+          <ScalarProperty Name="BIR" ColumnName="BIR" />
+          <ScalarProperty Name="EKSIKGUNSAYISI" ColumnName="EKSIKGUNSAYISI" />
+          <ScalarProperty Name="SERVISBAKIMGUNSAYISI" ColumnName="SERVISBAKIMGUNSAYISI" />
+          <ScalarProperty Name="CALISMAGUNSAYISI" ColumnName="CALISMAGUNSAYISI" />
+          <ScalarProperty Name="CIKISTARİHİ" ColumnName="CIKISTARİHİ" />
+          <ScalarProperty Name="BASLATARİHİ" ColumnName="BASLATARİHİ" />
+          <ScalarProperty Name="ARACTIPI" ColumnName="ARACTIPI" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="YILI" ColumnName="YILI" />
+          <ScalarProperty Name="AYI" ColumnName="AYI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHAKEDISANA">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLHAKEDISANA">
+        <MappingFragment StoreEntitySet="TBLHAKEDISANA">
+          <ScalarProperty Name="ALTTOPLMASZLMBEDELI" ColumnName="ALTTOPLMASZLMBEDELI" />
+          <ScalarProperty Name="ALTEKSOZLESMEBEDELI" ColumnName="ALTEKSOZLESMEBEDELI" />
+          <ScalarProperty Name="ALTONAYSAYISI" ColumnName="ALTONAYSAYISI" />
+          <ScalarProperty Name="ALTONAYTARIHI" ColumnName="ALTONAYTARIHI" />
+          <ScalarProperty Name="ALTSOZLESMEBEDELI" ColumnName="ALTSOZLESMEBEDELI" />
+          <ScalarProperty Name="SUKISBTRMTRH" ColumnName="SUKISBTRMTRH" />
+          <ScalarProperty Name="SUKVERILANSURE" ColumnName="SUKVERILANSURE" />
+          <ScalarProperty Name="SUKSAYISI" ColumnName="SUKSAYISI" />
+          <ScalarProperty Name="SUKTARIH" ColumnName="SUKTARIH" />
+          <ScalarProperty Name="SOZBEDEL" ColumnName="SOZBEDEL" />
+          <ScalarProperty Name="NOSU" ColumnName="NOSU" />
+          <ScalarProperty Name="ISYERTSLTRHBITIS" ColumnName="ISYERTSLTRHBITIS" />
+          <ScalarProperty Name="SOZLESMEYEGOREISINSURESI" ColumnName="SOZLESMEYEGOREISINSURESI" />
+          <ScalarProperty Name="ISYERTSLTRHBASLAMA" ColumnName="ISYERTSLTRHBASLAMA" />
+          <ScalarProperty Name="YILI" ColumnName="YILI" />
+          <ScalarProperty Name="AYI" ColumnName="AYI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHAKEDISARACLAR">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLHAKEDISARACLAR">
+        <MappingFragment StoreEntitySet="TBLHAKEDISARACLAR">
+          <ScalarProperty Name="YEDEKARACID" ColumnName="YEDEKARACID" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="TIPID" ColumnName="TIPID" />
+          <ScalarProperty Name="SIRKETID" ColumnName="SIRKETID" />
+          <ScalarProperty Name="CIKISTARIHI" ColumnName="CIKISTARIHI" />
+          <ScalarProperty Name="BASLAMATARIHI" ColumnName="BASLAMATARIHI" />
+          <ScalarProperty Name="PLAKA" ColumnName="PLAKA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHAKEDISTIP">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLHAKEDISTIP">
+        <MappingFragment StoreEntitySet="TBLHAKEDISTIP">
+          <ScalarProperty Name="CALISMAGUNSAYISI" ColumnName="CALISMAGUNSAYISI" />
+          <ScalarProperty Name="MIKTARI" ColumnName="MIKTARI" />
+          <ScalarProperty Name="BIRIMFIYATI" ColumnName="BIRIMFIYATI" />
+          <ScalarProperty Name="TIPADI" ColumnName="TIPADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHAKEDISTIPHRKT">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLHAKEDISTIPHRKT">
+        <MappingFragment StoreEntitySet="TBLHAKEDISTIPHRKT">
+          <ScalarProperty Name="HAKANAID" ColumnName="HAKANAID" />
+          <ScalarProperty Name="ONCEKITPLGUNSAYISI" ColumnName="ONCEKITPLGUNSAYISI" />
+          <ScalarProperty Name="CALISMAGUNSAYISI" ColumnName="CALISMAGUNSAYISI" />
+          <ScalarProperty Name="MIKTAR" ColumnName="MIKTAR" />
+          <ScalarProperty Name="HAKEDISTIPID" ColumnName="HAKEDISTIPID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLIDARISARTHRKT">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLIDARISARTHRKT">
+        <MappingFragment StoreEntitySet="TBLIDARISARTHRKT">
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="SIRANO" ColumnName="SIRANO" />
+          <ScalarProperty Name="IDARISARTID" ColumnName="IDARISARTID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLIDARISARTNAME">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLIDARISARTNAME">
+        <MappingFragment StoreEntitySet="TBLIDARISARTNAME">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="IDARISARTADI" ColumnName="IDARISARTADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLIHALELER">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLIHALELER">
+        <MappingFragment StoreEntitySet="TBLIHALELER">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="IHALEDURUM" ColumnName="IHALEDURUM" />
+          <ScalarProperty Name="ISBITISTARIHI" ColumnName="ISBITISTARIHI" />
+          <ScalarProperty Name="ISINSURESI" ColumnName="ISINSURESI" />
+          <ScalarProperty Name="SOZLESMEBEDELI" ColumnName="SOZLESMEBEDELI" />
+          <ScalarProperty Name="SOZLESMETARIHI" ColumnName="SOZLESMETARIHI" />
+          <ScalarProperty Name="ISINTANIMI" ColumnName="ISINTANIMI" />
+          <ScalarProperty Name="YUKLENICIADI" ColumnName="YUKLENICIADI" />
+          <ScalarProperty Name="IDARENINADI" ColumnName="IDARENINADI" />
+          <ScalarProperty Name="IHALEKAYITNO" ColumnName="IHALEKAYITNO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLIHLHAKEDIS">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLIHLHAKEDIS">
+        <MappingFragment StoreEntitySet="TBLIHLHAKEDIS">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="HAKEDISTUTARI" ColumnName="HAKEDISTUTARI" />
+          <ScalarProperty Name="HAKEDISMIKTAR" ColumnName="HAKEDISMIKTAR" />
+          <ScalarProperty Name="HAKEDISDONEM" ColumnName="HAKEDISDONEM" />
+          <ScalarProperty Name="HAKEDISNO" ColumnName="HAKEDISNO" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="IHALEID" ColumnName="IHALEID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLISEMIRDURUM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLISEMIRDURUM">
+        <MappingFragment StoreEntitySet="TBLISEMIRDURUM">
+          <ScalarProperty Name="ADI" ColumnName="ADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLISEMRI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLISEMRI">
+        <MappingFragment StoreEntitySet="TBLISEMRI">
+          <ScalarProperty Name="ATIKYAG" ColumnName="ATIKYAG" />
+          <ScalarProperty Name="BAKIMDERECESIID" ColumnName="BAKIMDERECESIID" />
+          <ScalarProperty Name="BAKIMTURUID" ColumnName="BAKIMTURUID" />
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="ISBITIMORANI" ColumnName="ISBITIMORANI" />
+          <ScalarProperty Name="IMZAATOLYESEFID" ColumnName="IMZAATOLYESEFID" />
+          <ScalarProperty Name="YAPILANBAKIMOZETI" ColumnName="YAPILANBAKIMOZETI" />
+          <ScalarProperty Name="ISEMRISIRANO" ColumnName="ISEMRISIRANO" />
+          <ScalarProperty Name="SONRAKIBKMSAAT" ColumnName="SONRAKIBKMSAAT" />
+          <ScalarProperty Name="BAKIMSAATI" ColumnName="BAKIMSAATI" />
+          <ScalarProperty Name="SONRAKIBKMTRH" ColumnName="SONRAKIBKMTRH" />
+          <ScalarProperty Name="SONRAKIBKMKM" ColumnName="SONRAKIBKMKM" />
+          <ScalarProperty Name="BAKIMKMSI" ColumnName="BAKIMKMSI" />
+          <ScalarProperty Name="ARACIGETIREN" ColumnName="ARACIGETIREN" />
+          <ScalarProperty Name="BAKIMYERACKLM" ColumnName="BAKIMYERACKLM" />
+          <ScalarProperty Name="BAKIMYERIID" ColumnName="BAKIMYERIID" />
+          <ScalarProperty Name="ISEMRIDURUMID" ColumnName="ISEMRIDURUMID" />
+          <ScalarProperty Name="BILDIRILENARIZA" ColumnName="BILDIRILENARIZA" />
+          <ScalarProperty Name="ARIZANEDENIID" ColumnName="ARIZANEDENIID" />
+          <ScalarProperty Name="CIKISSAAT" ColumnName="CIKISSAAT" />
+          <ScalarProperty Name="CIKISTARIH" ColumnName="CIKISTARIH" />
+          <ScalarProperty Name="GIRISSAAT" ColumnName="GIRISSAAT" />
+          <ScalarProperty Name="GIRISTARIH" ColumnName="GIRISTARIH" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="ATOLYEID" ColumnName="ATOLYEID" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLISEMRIBAKIMLAR">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLISEMRIBAKIMLAR">
+        <MappingFragment StoreEntitySet="TBLISEMRIBAKIMLAR">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="YAPILANBAKIM" ColumnName="YAPILANBAKIM" />
+          <ScalarProperty Name="BAKIMGRUBUID" ColumnName="BAKIMGRUBUID" />
+          <ScalarProperty Name="BAKIMYAPUSTAID" ColumnName="BAKIMYAPUSTAID" />
+          <ScalarProperty Name="ATOLYEID" ColumnName="ATOLYEID" />
+          <ScalarProperty Name="ISEMRIID" ColumnName="ISEMRIID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLISEMRIEKRYNL">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLISEMRIEKRYNL">
+        <MappingFragment StoreEntitySet="TBLISEMRIEKRYNL">
+          <ScalarProperty Name="YENILE" ColumnName="YENILE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLISLEMTIPI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLISLEMTIPI">
+        <MappingFragment StoreEntitySet="TBLISLEMTIPI">
+          <ScalarProperty Name="BOLUM" ColumnName="BOLUM" />
+          <ScalarProperty Name="HARFI" ColumnName="HARFI" />
+          <ScalarProperty Name="ISLEMTIPI" ColumnName="ISLEMTIPI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLKULLANICILAR">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLKULLANICILAR">
+        <MappingFragment StoreEntitySet="TBLKULLANICILAR">
+          <ScalarProperty Name="PERSONELID" ColumnName="PERSONELID" />
+          <ScalarProperty Name="ADISOYADI" ColumnName="ADISOYADI" />
+          <ScalarProperty Name="IDX" ColumnName="IDX" />
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="BELDBIRIMID" ColumnName="BELDBIRIMID" />
+          <ScalarProperty Name="OKUMA" ColumnName="OKUMA" />
+          <ScalarProperty Name="SIL" ColumnName="SIL" />
+          <ScalarProperty Name="DUZENLE" ColumnName="DUZENLE" />
+          <ScalarProperty Name="EKLE" ColumnName="EKLE" />
+          <ScalarProperty Name="SIFRETEKRAR" ColumnName="SIFRETEKRAR" />
+          <ScalarProperty Name="SIFRE" ColumnName="SIFRE" />
+          <ScalarProperty Name="GOREVYERI" ColumnName="GOREVYERI" />
+          <ScalarProperty Name="UNVANI" ColumnName="UNVANI" />
+          <ScalarProperty Name="KULLANICIADI" ColumnName="KULLANICIADI" />
+          <ScalarProperty Name="TURU" ColumnName="TURU" />
+          <ScalarProperty Name="SIRANO" ColumnName="SIRANO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLLOG">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLLOG">
+        <MappingFragment StoreEntitySet="TBLLOG">
+          <ScalarProperty Name="MAC" ColumnName="MAC" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="KULLANICIID" ColumnName="KULLANICIID" />
+          <ScalarProperty Name="KULLANICIADI" ColumnName="KULLANICIADI" />
+          <ScalarProperty Name="SAAT" ColumnName="SAAT" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="ISLEMINID" ColumnName="ISLEMINID" />
+          <ScalarProperty Name="ISLEMTURU" ColumnName="ISLEMTURU" />
+          <ScalarProperty Name="ISLEMSAYFASI" ColumnName="ISLEMSAYFASI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMALZBIRIM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLMALZBIRIM">
+        <MappingFragment StoreEntitySet="TBLMALZBIRIM">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="BIRIMADI" ColumnName="BIRIMADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMALZBOLUM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLMALZBOLUM">
+        <MappingFragment StoreEntitySet="TBLMALZBOLUM">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="BOLUMADI" ColumnName="BOLUMADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMALZDEPO">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLMALZDEPO">
+        <MappingFragment StoreEntitySet="TBLMALZDEPO">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="DEPOADI" ColumnName="DEPOADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMALZEMELER">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLMALZEMELER">
+        <MappingFragment StoreEntitySet="TBLMALZEMELER">
+          <ScalarProperty Name="KALAN" ColumnName="KALAN" />
+          <ScalarProperty Name="CIKIS" ColumnName="CIKIS" />
+          <ScalarProperty Name="GIRIS" ColumnName="GIRIS" />
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="KAYITTIPIID" ColumnName="KAYITTIPIID" />
+          <ScalarProperty Name="MALZEMEFOTO" ColumnName="MALZEMEFOTO" />
+          <ScalarProperty Name="KMKONTROL" ColumnName="KMKONTROL" />
+          <ScalarProperty Name="SERINOKONTROL" ColumnName="SERINOKONTROL" />
+          <ScalarProperty Name="TARIHKONTROL" ColumnName="TARIHKONTROL" />
+          <ScalarProperty Name="BARKOD" ColumnName="BARKOD" />
+          <ScalarProperty Name="GOZNO" ColumnName="GOZNO" />
+          <ScalarProperty Name="RAFNO" ColumnName="RAFNO" />
+          <ScalarProperty Name="BOLUMID" ColumnName="BOLUMID" />
+          <ScalarProperty Name="KDVID" ColumnName="KDVID" />
+          <ScalarProperty Name="GRUPID2" ColumnName="GRUPID2" />
+          <ScalarProperty Name="GRUPID" ColumnName="GRUPID" />
+          <ScalarProperty Name="BIRIMID" ColumnName="BIRIMID" />
+          <ScalarProperty Name="KULLANIMYERI" ColumnName="KULLANIMYERI" />
+          <ScalarProperty Name="DIGERADI" ColumnName="DIGERADI" />
+          <ScalarProperty Name="MALZEMEADI" ColumnName="MALZEMEADI" />
+          <ScalarProperty Name="OEMKOD" ColumnName="OEMKOD" />
+          <ScalarProperty Name="UFKOD" ColumnName="UFKOD" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMALZGRUP">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLMALZGRUP">
+        <MappingFragment StoreEntitySet="TBLMALZGRUP">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="MALZEMEGRUP" ColumnName="MALZEMEGRUP" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMALZGRUP2">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLMALZGRUP2">
+        <MappingFragment StoreEntitySet="TBLMALZGRUP2">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="MALZEMEGRUP2" ColumnName="MALZEMEGRUP2" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMALZKDV">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLMALZKDV">
+        <MappingFragment StoreEntitySet="TBLMALZKDV">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="KDVORAN" ColumnName="KDVORAN" />
+          <ScalarProperty Name="KDVGRUP" ColumnName="KDVGRUP" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMALZMARKA">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLMALZMARKA">
+        <MappingFragment StoreEntitySet="TBLMALZMARKA">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="MALZMARKA" ColumnName="MALZMARKA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMENU">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLMENU">
+        <MappingFragment StoreEntitySet="TBLMENU">
+          <ScalarProperty Name="IDX" ColumnName="IDX" />
+          <ScalarProperty Name="KOMUTADI" ColumnName="KOMUTADI" />
+          <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERIZINYILLARI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERIZINYILLARI">
+        <MappingFragment StoreEntitySet="TBLPERIZINYILLARI">
+          <ScalarProperty Name="YIL" ColumnName="YIL" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSEGITIMDRM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSEGITIMDRM">
+        <MappingFragment StoreEntitySet="TBLPERSEGITIMDRM">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="EGITIMDURUM" ColumnName="EGITIMDURUM" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSEHLIYET">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSEHLIYET">
+        <MappingFragment StoreEntitySet="TBLPERSEHLIYET">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="EHLIYET" ColumnName="EHLIYET" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSIZINDURUM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSIZINDURUM">
+        <MappingFragment StoreEntitySet="TBLPERSIZINDURUM">
+          <ScalarProperty Name="KULLANILANIZIN" ColumnName="KULLANILANIZIN" />
+          <ScalarProperty Name="IZINHAKKI" ColumnName="IZINHAKKI" />
+          <ScalarProperty Name="IZINYILI" ColumnName="IZINYILI" />
+          <ScalarProperty Name="PERSONELIZINID" ColumnName="PERSONELIZINID" />
+          <ScalarProperty Name="PERSONELID" ColumnName="PERSONELID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSKURUMGOREV">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSKURUMGOREV">
+        <MappingFragment StoreEntitySet="TBLPERSKURUMGOREV">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="KURUMGOREV" ColumnName="KURUMGOREV" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSMESAI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSMESAI">
+        <MappingFragment StoreEntitySet="TBLPERSMESAI">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="MESAISAATI" ColumnName="MESAISAATI" />
+          <ScalarProperty Name="MESAITARIHI" ColumnName="MESAITARIHI" />
+          <ScalarProperty Name="PERSID" ColumnName="PERSID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSONEL">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSONEL">
+        <MappingFragment StoreEntitySet="TBLPERSONEL">
+          <ScalarProperty Name="RESIMPER" ColumnName="RESIMPER" />
+          <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+          <ScalarProperty Name="PARAFTANIM" ColumnName="PARAFTANIM" />
+          <ScalarProperty Name="DOGUMTARIHI" ColumnName="DOGUMTARIHI" />
+          <ScalarProperty Name="ISEGIRISTARIHI" ColumnName="ISEGIRISTARIHI" />
+          <ScalarProperty Name="KALANIZIN" ColumnName="KALANIZIN" />
+          <ScalarProperty Name="KULLANILANIZIN" ColumnName="KULLANILANIZIN" />
+          <ScalarProperty Name="IZINTOPLAMI" ColumnName="IZINTOPLAMI" />
+          <ScalarProperty Name="PERSDURUMID" ColumnName="PERSDURUMID" />
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="SIRANO" ColumnName="SIRANO" />
+          <ScalarProperty Name="COCUKTOPLAM" ColumnName="COCUKTOPLAM" />
+          <ScalarProperty Name="COCUKERKEK" ColumnName="COCUKERKEK" />
+          <ScalarProperty Name="COCUKKIZ" ColumnName="COCUKKIZ" />
+          <ScalarProperty Name="CEPTELEFON2" ColumnName="CEPTELEFON2" />
+          <ScalarProperty Name="CEPTELEFON" ColumnName="CEPTELEFON" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="IKMADRES" ColumnName="IKMADRES" />
+          <ScalarProperty Name="YETKILIIMZAID" ColumnName="YETKILIIMZAID" />
+          <ScalarProperty Name="KANGRUPID" ColumnName="KANGRUPID" />
+          <ScalarProperty Name="GOREVYERI" ColumnName="GOREVYERI" />
+          <ScalarProperty Name="BELDMUDURLUKID" ColumnName="BELDMUDURLUKID" />
+          <ScalarProperty Name="BELDBIRIMIID" ColumnName="BELDBIRIMIID" />
+          <ScalarProperty Name="EHLVERTARIH" ColumnName="EHLVERTARIH" />
+          <ScalarProperty Name="EHLIYETID" ColumnName="EHLIYETID" />
+          <ScalarProperty Name="PERSISTIHDAMIID" ColumnName="PERSISTIHDAMIID" />
+          <ScalarProperty Name="EGITIMID" ColumnName="EGITIMID" />
+          <ScalarProperty Name="GOREVUNVANID" ColumnName="GOREVUNVANID" />
+          <ScalarProperty Name="UNVANID" ColumnName="UNVANID" />
+          <ScalarProperty Name="ADISOYADI" ColumnName="ADISOYADI" />
+          <ScalarProperty Name="SOYADI" ColumnName="SOYADI" />
+          <ScalarProperty Name="ADI" ColumnName="ADI" />
+          <ScalarProperty Name="SICILNO" ColumnName="SICILNO" />
+          <ScalarProperty Name="TCKIMLIKNO" ColumnName="TCKIMLIKNO" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSONELDURUM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSONELDURUM">
+        <MappingFragment StoreEntitySet="TBLPERSONELDURUM">
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSONELISTIHDAMDURUM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSONELISTIHDAMDURUM">
+        <MappingFragment StoreEntitySet="TBLPERSONELISTIHDAMDURUM">
+          <ScalarProperty Name="ADI" ColumnName="ADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSONELIZIN">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSONELIZIN">
+        <MappingFragment StoreEntitySet="TBLPERSONELIZIN">
+          <ScalarProperty Name="MUDURYERINE" ColumnName="MUDURYERINE" />
+          <ScalarProperty Name="GENELSEKYRDID" ColumnName="GENELSEKYRDID" />
+          <ScalarProperty Name="INSANDAIREBSKID" ColumnName="INSANDAIREBSKID" />
+          <ScalarProperty Name="DAIREBSKID" ColumnName="DAIREBSKID" />
+          <ScalarProperty Name="SBMUDURID" ColumnName="SBMUDURID" />
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="IZINDURUM" ColumnName="IZINDURUM" />
+          <ScalarProperty Name="ONAYTARIH" ColumnName="ONAYTARIH" />
+          <ScalarProperty Name="IZINDEBULADRES" ColumnName="IZINDEBULADRES" />
+          <ScalarProperty Name="GOREVEBASTARIH" ColumnName="GOREVEBASTARIH" />
+          <ScalarProperty Name="IZINGUNSAY" ColumnName="IZINGUNSAY" />
+          <ScalarProperty Name="BITISSAATI" ColumnName="BITISSAATI" />
+          <ScalarProperty Name="BITISTARIHI" ColumnName="BITISTARIHI" />
+          <ScalarProperty Name="BASLANGICSAATI" ColumnName="BASLANGICSAATI" />
+          <ScalarProperty Name="BASLANGICTARIHI" ColumnName="BASLANGICTARIHI" />
+          <ScalarProperty Name="IZINSURESI" ColumnName="IZINSURESI" />
+          <ScalarProperty Name="IZINYILLARI" ColumnName="IZINYILLARI" />
+          <ScalarProperty Name="IZINTURU" ColumnName="IZINTURU" />
+          <ScalarProperty Name="PERSID" ColumnName="PERSID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERSUNVAN">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERSUNVAN">
+        <MappingFragment StoreEntitySet="TBLPERSUNVAN">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="UNVAN" ColumnName="UNVAN" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPERTOPLANTI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLPERTOPLANTI">
+        <MappingFragment StoreEntitySet="TBLPERTOPLANTI">
+          <ScalarProperty Name="ELEKTRIKSRMLS" ColumnName="ELEKTRIKSRMLS" />
+          <ScalarProperty Name="KARARACIKLAMASI" ColumnName="KARARACIKLAMASI" />
+          <ScalarProperty Name="GUNDEMMADDELERI" ColumnName="GUNDEMMADDELERI" />
+          <ScalarProperty Name="SONRAKITOPLANTITARIHI" ColumnName="SONRAKITOPLANTITARIHI" />
+          <ScalarProperty Name="TOPLANTISURESI" ColumnName="TOPLANTISURESI" />
+          <ScalarProperty Name="RAPORNO" ColumnName="RAPORNO" />
+          <ScalarProperty Name="DAIREBASK_KODU" ColumnName="DAIREBASK_KODU" />
+          <ScalarProperty Name="TOPLANTIKONUSU" ColumnName="TOPLANTIKONUSU" />
+          <ScalarProperty Name="TOPLANTIYONETICISI" ColumnName="TOPLANTIYONETICISI" />
+          <ScalarProperty Name="TOPLANTITARIHI" ColumnName="TOPLANTITARIHI" />
+          <ScalarProperty Name="AMBARAYNIYATSRMLS" ColumnName="AMBARAYNIYATSRMLS" />
+          <ScalarProperty Name="OTOLASTIKUSTABASI" ColumnName="OTOLASTIKUSTABASI" />
+          <ScalarProperty Name="KAMYONTAMIRUSTABAS" ColumnName="KAMYONTAMIRUSTABAS" />
+          <ScalarProperty Name="KAYNAKISTANYONSEF" ColumnName="KAYNAKISTANYONSEF" />
+          <ScalarProperty Name="AKARYKTSRMLS" ColumnName="AKARYKTSRMLS" />
+          <ScalarProperty Name="IKMALBIRIMSRMLS" ColumnName="IKMALBIRIMSRMLS" />
+          <ScalarProperty Name="ISMAKINASISRMLS" ColumnName="ISMAKINASISRMLS" />
+          <ScalarProperty Name="AMBARSRMLS" ColumnName="AMBARSRMLS" />
+          <ScalarProperty Name="ATOLYESRMLS" ColumnName="ATOLYESRMLS" />
+          <ScalarProperty Name="YAZIISLERISRMLS" ColumnName="YAZIISLERISRMLS" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLSABITLER">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLSABITLER">
+        <MappingFragment StoreEntitySet="TBLSABITLER">
+          <ScalarProperty Name="SABITYERI" ColumnName="SABITYERI" />
+          <ScalarProperty Name="SABITACIKLAMA" ColumnName="SABITACIKLAMA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTALEP">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTALEP">
+        <MappingFragment StoreEntitySet="TBLTALEP">
+          <ScalarProperty Name="TEKLIFID" ColumnName="TEKLIFID" />
+          <ScalarProperty Name="BILGINOTU" ColumnName="BILGINOTU" />
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="GENELSEKRETERID" ColumnName="GENELSEKRETERID" />
+          <ScalarProperty Name="GENELSEKYRDID" ColumnName="GENELSEKYRDID" />
+          <ScalarProperty Name="DAIREBSKID" ColumnName="DAIREBSKID" />
+          <ScalarProperty Name="MUDURID" ColumnName="MUDURID" />
+          <ScalarProperty Name="SORUMLUID" ColumnName="SORUMLUID" />
+          <ScalarProperty Name="DEPOYETKILIID" ColumnName="DEPOYETKILIID" />
+          <ScalarProperty Name="ATOLYESEFID" ColumnName="ATOLYESEFID" />
+          <ScalarProperty Name="KULLODENEKTUTAR" ColumnName="KULLODENEKTUTAR" />
+          <ScalarProperty Name="YAKLASIKMALIYET" ColumnName="YAKLASIKMALIYET" />
+          <ScalarProperty Name="IHALEUSULU" ColumnName="IHALEUSULU" />
+          <ScalarProperty Name="BUTCETERTIBI" ColumnName="BUTCETERTIBI" />
+          <ScalarProperty Name="ISINYAPYERI" ColumnName="ISINYAPYERI" />
+          <ScalarProperty Name="ISINTURUMIKTARI" ColumnName="ISINTURUMIKTARI" />
+          <ScalarProperty Name="ISINADI" ColumnName="ISINADI" />
+          <ScalarProperty Name="BELGETARIH" ColumnName="BELGETARIH" />
+          <ScalarProperty Name="BELGEKONU" ColumnName="BELGEKONU" />
+          <ScalarProperty Name="BELGESAYI" ColumnName="BELGESAYI" />
+          <ScalarProperty Name="SAAT" ColumnName="SAAT" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTALEPFIS">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTALEPFIS">
+        <MappingFragment StoreEntitySet="TBLTALEPFIS">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="TALEPKAYITID" ColumnName="TALEPKAYITID" />
+          <ScalarProperty Name="MUDONAYZAMAN" ColumnName="MUDONAYZAMAN" />
+          <ScalarProperty Name="MUDURID" ColumnName="MUDURID" />
+          <ScalarProperty Name="DEPOYETKILIID" ColumnName="DEPOYETKILIID" />
+          <ScalarProperty Name="ATOLYESEFID" ColumnName="ATOLYESEFID" />
+          <ScalarProperty Name="TALEPEDENUSTAID" ColumnName="TALEPEDENUSTAID" />
+          <ScalarProperty Name="TALEPIPTALACIKLAMA" ColumnName="TALEPIPTALACIKLAMA" />
+          <ScalarProperty Name="TALEPDURUMID" ColumnName="TALEPDURUMID" />
+          <ScalarProperty Name="FISTUTAR" ColumnName="FISTUTAR" />
+          <ScalarProperty Name="FIRMAID" ColumnName="FIRMAID" />
+          <ScalarProperty Name="SAAT" ColumnName="SAAT" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ISEMRIID" ColumnName="ISEMRIID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTALEPFISHRKT">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTALEPFISHRKT">
+        <MappingFragment StoreEntitySet="TBLTALEPFISHRKT">
+          <ScalarProperty Name="TUTAR" ColumnName="TUTAR" />
+          <ScalarProperty Name="FIYAT" ColumnName="FIYAT" />
+          <ScalarProperty Name="MIKTAR" ColumnName="MIKTAR" />
+          <ScalarProperty Name="ISTENENMIKTAR" ColumnName="ISTENENMIKTAR" />
+          <ScalarProperty Name="BIRIMID" ColumnName="BIRIMID" />
+          <ScalarProperty Name="MALZACIKLAMA" ColumnName="MALZACIKLAMA" />
+          <ScalarProperty Name="MALZEMEID" ColumnName="MALZEMEID" />
+          <ScalarProperty Name="TALEPFISID" ColumnName="TALEPFISID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTALEPHRKT">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTALEPHRKT">
+        <MappingFragment StoreEntitySet="TBLTALEPHRKT">
+          <ScalarProperty Name="TALEPFISID" ColumnName="TALEPFISID" />
+          <ScalarProperty Name="TUTAR" ColumnName="TUTAR" />
+          <ScalarProperty Name="FIYAT" ColumnName="FIYAT" />
+          <ScalarProperty Name="MIKTAR" ColumnName="MIKTAR" />
+          <ScalarProperty Name="BIRIMID" ColumnName="BIRIMID" />
+          <ScalarProperty Name="MALZACIKLAMA" ColumnName="MALZACIKLAMA" />
+          <ScalarProperty Name="MALZEMEID" ColumnName="MALZEMEID" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="TALEPID" ColumnName="TALEPID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTALEPTEKNIKSART">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTALEPTEKNIKSART">
+        <MappingFragment StoreEntitySet="TBLTALEPTEKNIKSART">
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="SIRANO" ColumnName="SIRANO" />
+          <ScalarProperty Name="TALEPID" ColumnName="TALEPID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTASITGOREV">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTASITGOREV">
+        <MappingFragment StoreEntitySet="TBLTASITGOREV">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="GOREVGRUPID" ColumnName="GOREVGRUPID" />
+          <ScalarProperty Name="BIRIMAMIRIID" ColumnName="BIRIMAMIRIID" />
+          <ScalarProperty Name="MUDONAYZAMAN" ColumnName="MUDONAYZAMAN" />
+          <ScalarProperty Name="MUDURID" ColumnName="MUDURID" />
+          <ScalarProperty Name="MESAIMIKTARI" ColumnName="MESAIMIKTARI" />
+          <ScalarProperty Name="GUNUNADI" ColumnName="GUNUNADI" />
+          <ScalarProperty Name="MESAIBITISSAATI" ColumnName="MESAIBITISSAATI" />
+          <ScalarProperty Name="DONUSKM" ColumnName="DONUSKM" />
+          <ScalarProperty Name="DONUSSAAT" ColumnName="DONUSSAAT" />
+          <ScalarProperty Name="DONUSTARIH" ColumnName="DONUSTARIH" />
+          <ScalarProperty Name="DONUSZAMANI" ColumnName="DONUSZAMANI" />
+          <ScalarProperty Name="CIKISKM" ColumnName="CIKISKM" />
+          <ScalarProperty Name="CIKISSAAT" ColumnName="CIKISSAAT" />
+          <ScalarProperty Name="CIKISTARIH" ColumnName="CIKISTARIH" />
+          <ScalarProperty Name="CIKISZAMANI" ColumnName="CIKISZAMANI" />
+          <ScalarProperty Name="GIDILECEKYER" ColumnName="GIDILECEKYER" />
+          <ScalarProperty Name="GOREVTURU" ColumnName="GOREVTURU" />
+          <ScalarProperty Name="KURUM" ColumnName="KURUM" />
+          <ScalarProperty Name="BIRIMID" ColumnName="BIRIMID" />
+          <ScalarProperty Name="SOFORID" ColumnName="SOFORID" />
+          <ScalarProperty Name="PLAKAID" ColumnName="PLAKAID" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTASITPERS">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTASITPERS">
+        <MappingFragment StoreEntitySet="TBLTASITPERS">
+          <ScalarProperty Name="UNVANID" ColumnName="UNVANID" />
+          <ScalarProperty Name="PERSONELID" ColumnName="PERSONELID" />
+          <ScalarProperty Name="TASITID" ColumnName="TASITID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTEKLIF">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTEKLIF">
+        <MappingFragment StoreEntitySet="TBLTEKLIF">
+          <ScalarProperty Name="PIYASABSKID" ColumnName="PIYASABSKID" />
+          <ScalarProperty Name="PIYASAUYE2ID" ColumnName="PIYASAUYE2ID" />
+          <ScalarProperty Name="PIYASAUYE1ID" ColumnName="PIYASAUYE1ID" />
+          <ScalarProperty Name="KESINLESTIR" ColumnName="KESINLESTIR" />
+          <ScalarProperty Name="AITOLDBIRIM" ColumnName="AITOLDBIRIM" />
+          <ScalarProperty Name="KOMBSKID" ColumnName="KOMBSKID" />
+          <ScalarProperty Name="KOMUYE2ID" ColumnName="KOMUYE2ID" />
+          <ScalarProperty Name="KOMUYE1ID" ColumnName="KOMUYE1ID" />
+          <ScalarProperty Name="TALEPID" ColumnName="TALEPID" />
+          <ScalarProperty Name="FIRMA8ID" ColumnName="FIRMA8ID" />
+          <ScalarProperty Name="FIRMA7ID" ColumnName="FIRMA7ID" />
+          <ScalarProperty Name="FIRMA6ID" ColumnName="FIRMA6ID" />
+          <ScalarProperty Name="FIRMA5ID" ColumnName="FIRMA5ID" />
+          <ScalarProperty Name="FIRMA4ID" ColumnName="FIRMA4ID" />
+          <ScalarProperty Name="FIRMA3ID" ColumnName="FIRMA3ID" />
+          <ScalarProperty Name="FIRMA2ID" ColumnName="FIRMA2ID" />
+          <ScalarProperty Name="FIRMA1ID" ColumnName="FIRMA1ID" />
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="OLURILGISI" ColumnName="OLURILGISI" />
+          <ScalarProperty Name="DAIREBSKID" ColumnName="DAIREBSKID" />
+          <ScalarProperty Name="IMZAMUDURID" ColumnName="IMZAMUDURID" />
+          <ScalarProperty Name="IMZABIRIMAMIRIID" ColumnName="IMZABIRIMAMIRIID" />
+          <ScalarProperty Name="SAKARARNO" ColumnName="SAKARARNO" />
+          <ScalarProperty Name="SAKARARTARIHI" ColumnName="SAKARARTARIHI" />
+          <ScalarProperty Name="FATTUTARYAZIYLA" ColumnName="FATTUTARYAZIYLA" />
+          <ScalarProperty Name="TOPLAMTUTAR" ColumnName="TOPLAMTUTAR" />
+          <ScalarProperty Name="KDVTUTAR" ColumnName="KDVTUTAR" />
+          <ScalarProperty Name="FATURATUTAR" ColumnName="FATURATUTAR" />
+          <ScalarProperty Name="FATURANO" ColumnName="FATURANO" />
+          <ScalarProperty Name="FATURATARIHI" ColumnName="FATURATARIHI" />
+          <ScalarProperty Name="KAZANANFIRMAID" ColumnName="KAZANANFIRMAID" />
+          <ScalarProperty Name="TEKLIFKONUSU" ColumnName="TEKLIFKONUSU" />
+          <ScalarProperty Name="SAAT" ColumnName="SAAT" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTEKLIFHRKT">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTEKLIFHRKT">
+        <MappingFragment StoreEntitySet="TBLTEKLIFHRKT">
+          <ScalarProperty Name="F8TUTAR" ColumnName="F8TUTAR" />
+          <ScalarProperty Name="F8BIRIMFIYAT" ColumnName="F8BIRIMFIYAT" />
+          <ScalarProperty Name="FIRMA8ID" ColumnName="FIRMA8ID" />
+          <ScalarProperty Name="F7TUTAR" ColumnName="F7TUTAR" />
+          <ScalarProperty Name="F7BIRIMFIYAT" ColumnName="F7BIRIMFIYAT" />
+          <ScalarProperty Name="FIRMA7ID" ColumnName="FIRMA7ID" />
+          <ScalarProperty Name="F6TUTAR" ColumnName="F6TUTAR" />
+          <ScalarProperty Name="F6BIRIMFIYAT" ColumnName="F6BIRIMFIYAT" />
+          <ScalarProperty Name="FIRMA6ID" ColumnName="FIRMA6ID" />
+          <ScalarProperty Name="F5TUTAR" ColumnName="F5TUTAR" />
+          <ScalarProperty Name="F5BIRIMFIYAT" ColumnName="F5BIRIMFIYAT" />
+          <ScalarProperty Name="FIRMA5ID" ColumnName="FIRMA5ID" />
+          <ScalarProperty Name="F4TUTAR" ColumnName="F4TUTAR" />
+          <ScalarProperty Name="F4BIRIMFIYAT" ColumnName="F4BIRIMFIYAT" />
+          <ScalarProperty Name="FIRMA4ID" ColumnName="FIRMA4ID" />
+          <ScalarProperty Name="F3TUTAR" ColumnName="F3TUTAR" />
+          <ScalarProperty Name="F3BIRIMFIYAT" ColumnName="F3BIRIMFIYAT" />
+          <ScalarProperty Name="FIRMA3ID" ColumnName="FIRMA3ID" />
+          <ScalarProperty Name="F2TUTAR" ColumnName="F2TUTAR" />
+          <ScalarProperty Name="F2BIRIMFIYAT" ColumnName="F2BIRIMFIYAT" />
+          <ScalarProperty Name="FIRMA2ID" ColumnName="FIRMA2ID" />
+          <ScalarProperty Name="F1TUTAR" ColumnName="F1TUTAR" />
+          <ScalarProperty Name="F1BIRIMFIYAT" ColumnName="F1BIRIMFIYAT" />
+          <ScalarProperty Name="FIRMA1ID" ColumnName="FIRMA1ID" />
+          <ScalarProperty Name="TUTAR" ColumnName="TUTAR" />
+          <ScalarProperty Name="BIRIMFIYAT" ColumnName="BIRIMFIYAT" />
+          <ScalarProperty Name="MARKA" ColumnName="MARKA" />
+          <ScalarProperty Name="MIKTAR" ColumnName="MIKTAR" />
+          <ScalarProperty Name="BIRIMID" ColumnName="BIRIMID" />
+          <ScalarProperty Name="MALZACIKLAMA" ColumnName="MALZACIKLAMA" />
+          <ScalarProperty Name="MALZEMEID" ColumnName="MALZEMEID" />
+          <ScalarProperty Name="ARACID" ColumnName="ARACID" />
+          <ScalarProperty Name="TEKLIFID" ColumnName="TEKLIFID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTEKLIFIDARISART">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTEKLIFIDARISART">
+        <MappingFragment StoreEntitySet="TBLTEKLIFIDARISART">
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="SIRANO" ColumnName="SIRANO" />
+          <ScalarProperty Name="TEKLIFID" ColumnName="TEKLIFID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTEKNIKSART">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTEKNIKSART">
+        <MappingFragment StoreEntitySet="TBLTEKNIKSART">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="ISINADI" ColumnName="ISINADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLTEKNIKSARTHRKT">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLTEKNIKSARTHRKT">
+        <MappingFragment StoreEntitySet="TBLTEKNIKSARTHRKT">
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="SIRANO" ColumnName="SIRANO" />
+          <ScalarProperty Name="TEKNIKID" ColumnName="TEKNIKID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLVARYOK">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLVARYOK">
+        <MappingFragment StoreEntitySet="TBLVARYOK">
+          <ScalarProperty Name="ADI" ColumnName="ADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLYAKITKARTI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLYAKITKARTI">
+        <MappingFragment StoreEntitySet="TBLYAKITKARTI">
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+          <ScalarProperty Name="SURUCUBELGE" ColumnName="SURUCUBELGE" />
+          <ScalarProperty Name="SICILNO" ColumnName="SICILNO" />
+          <ScalarProperty Name="TESLIMEDENUNVAN" ColumnName="TESLIMEDENUNVAN" />
+          <ScalarProperty Name="TESLIMEDEN" ColumnName="TESLIMEDEN" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+          <ScalarProperty Name="TESLIMALANUNVAN" ColumnName="TESLIMALANUNVAN" />
+          <ScalarProperty Name="TESLIMALAN" ColumnName="TESLIMALAN" />
+          <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
+          <ScalarProperty Name="YUKLEYICIFIRMMA" ColumnName="YUKLEYICIFIRMMA" />
+          <ScalarProperty Name="KIMLIKONYUZU" ColumnName="KIMLIKONYUZU" />
+          <ScalarProperty Name="CALISTIGIMUDURLUK" ColumnName="CALISTIGIMUDURLUK" />
+          <ScalarProperty Name="CALISTIGIBIRIM" ColumnName="CALISTIGIBIRIM" />
+          <ScalarProperty Name="SOFORADISOYADI" ColumnName="SOFORADISOYADI" />
+          <ScalarProperty Name="TCNO" ColumnName="TCNO" />
+          <ScalarProperty Name="KARTNO" ColumnName="KARTNO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLYAKITKONTFORM">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLYAKITKONTFORM">
+        <MappingFragment StoreEntitySet="TBLYAKITKONTFORM">
+          <ScalarProperty Name="OTOMASYONPERSID" ColumnName="OTOMASYONPERSID" />
+          <ScalarProperty Name="ILGILIBIRIMPERSID" ColumnName="ILGILIBIRIMPERSID" />
+          <ScalarProperty Name="ISTASYONPERSID" ColumnName="ISTASYONPERSID" />
+          <ScalarProperty Name="SOFOROPERATOR" ColumnName="SOFOROPERATOR" />
+          <ScalarProperty Name="MUDURLUKID" ColumnName="MUDURLUKID" />
+          <ScalarProperty Name="BIRIMID" ColumnName="BIRIMID" />
+          <ScalarProperty Name="CIKISZAMAN" ColumnName="CIKISZAMAN" />
+          <ScalarProperty Name="GIRISZAMAN" ColumnName="GIRISZAMAN" />
+          <ScalarProperty Name="EBYSSAYI" ColumnName="EBYSSAYI" />
+          <ScalarProperty Name="EBYSTARIH" ColumnName="EBYSTARIH" />
+          <ScalarProperty Name="PLAKA" ColumnName="PLAKA" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLYAZIEKLERI">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLYAZIEKLERI">
+        <MappingFragment StoreEntitySet="TBLYAZIEKLERI">
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+          <ScalarProperty Name="BIRIMTIPI" ColumnName="BIRIMTIPI" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLYETKILIMZA">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLYETKILIMZA">
+        <MappingFragment StoreEntitySet="TBLYETKILIMZA">
+          <ScalarProperty Name="YAGSORUMLUSU" ColumnName="YAGSORUMLUSU" />
+          <ScalarProperty Name="KABULKOMBASKANID" ColumnName="KABULKOMBASKANID" />
+          <ScalarProperty Name="KABULKOMUYE2ID" ColumnName="KABULKOMUYE2ID" />
+          <ScalarProperty Name="KABULKOMUYE1ID" ColumnName="KABULKOMUYE1ID" />
+          <ScalarProperty Name="PYSARSTRMABSKNID" ColumnName="PYSARSTRMABSKNID" />
+          <ScalarProperty Name="PYSARSTRMAUYE2ID" ColumnName="PYSARSTRMAUYE2ID" />
+          <ScalarProperty Name="PYSARSTRMAUYE1ID" ColumnName="PYSARSTRMAUYE1ID" />
+          <ScalarProperty Name="TKLFSORUMLUID" ColumnName="TKLFSORUMLUID" />
+          <ScalarProperty Name="DEPOYETKILID" ColumnName="DEPOYETKILID" />
+          <ScalarProperty Name="ATOLYESEFID" ColumnName="ATOLYESEFID" />
+          <ScalarProperty Name="SUBEMDRID" ColumnName="SUBEMDRID" />
+          <ScalarProperty Name="DAIREBSKNID" ColumnName="DAIREBSKNID" />
+          <ScalarProperty Name="GENELSKRTRYRDMCID" ColumnName="GENELSKRTRYRDMCID" />
+          <ScalarProperty Name="GENELSKRTRID" ColumnName="GENELSKRTRID" />
+          <ScalarProperty Name="BELBSKNID" ColumnName="BELBSKNID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLFIRMASEKTOR">
+      <EntityTypeMapping TypeName="belediyeEntities.TBLFIRMASEKTOR">
+        <MappingFragment StoreEntitySet="TBLFIRMASEKTOR">
+          <ScalarProperty Name="EDITIP" ColumnName="EDITIP" />
+          <ScalarProperty Name="SAVEIP" ColumnName="SAVEIP" />
+          <ScalarProperty Name="EDITMAC" ColumnName="EDITMAC" />
+          <ScalarProperty Name="SAVEMAC" ColumnName="SAVEMAC" />
+          <ScalarProperty Name="EDITDATE" ColumnName="EDITDATE" />
+          <ScalarProperty Name="EDITUSER" ColumnName="EDITUSER" />
+          <ScalarProperty Name="SAVEDATE" ColumnName="SAVEDATE" />
+          <ScalarProperty Name="SAVEUSER" ColumnName="SAVEUSER" />
+          <ScalarProperty Name="SEKTORADI" ColumnName="SEKTORADI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

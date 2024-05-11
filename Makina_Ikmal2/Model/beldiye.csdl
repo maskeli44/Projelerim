@@ -1,0 +1,1677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="belediyeEntities" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="bellEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="FAALIYET" EntityType="belediyeEntities.FAALIYET" />
+    <EntitySet Name="HAKEDISAKARYAKIT" EntityType="belediyeEntities.HAKEDISAKARYAKIT" />
+    <EntitySet Name="HAKEDISYDKARAC" EntityType="belediyeEntities.HAKEDISYDKARAC" />
+    <EntitySet Name="TAHARACDURUM" EntityType="belediyeEntities.TAHARACDURUM" />
+    <EntitySet Name="TAHARACHGS" EntityType="belediyeEntities.TAHARACHGS" />
+    <EntitySet Name="TAHARACTIPI" EntityType="belediyeEntities.TAHARACTIPI" />
+    <EntitySet Name="TAHARIZANEDENI" EntityType="belediyeEntities.TAHARIZANEDENI" />
+    <EntitySet Name="TAHBAKIMDERECE" EntityType="belediyeEntities.TAHBAKIMDERECE" />
+    <EntitySet Name="TAHBAKIMTURU" EntityType="belediyeEntities.TAHBAKIMTURU" />
+    <EntitySet Name="TAHMODELYILI" EntityType="belediyeEntities.TAHMODELYILI" />
+    <EntitySet Name="TBLARACGRUBU" EntityType="belediyeEntities.TBLARACGRUBU" />
+    <EntitySet Name="TBLARACGRUBU2" EntityType="belediyeEntities.TBLARACGRUBU2" />
+    <EntitySet Name="TBLARACIHALEGRUP" EntityType="belediyeEntities.TBLARACIHALEGRUP" />
+    <EntitySet Name="TBLARACLAR" EntityType="belediyeEntities.TBLARACLAR" />
+    <EntitySet Name="TBLARACMARKA" EntityType="belediyeEntities.TBLARACMARKA" />
+    <EntitySet Name="TBLARACMESTKP" EntityType="belediyeEntities.TBLARACMESTKP" />
+    <EntitySet Name="TBLARACRESIM" EntityType="belediyeEntities.TBLARACRESIM" />
+    <EntitySet Name="TBLARACTRFCEZA" EntityType="belediyeEntities.TBLARACTRFCEZA" />
+    <EntitySet Name="TBLARACYEDEKALIM" EntityType="belediyeEntities.TBLARACYEDEKALIM" />
+    <EntitySet Name="TBLARACZIMMET" EntityType="belediyeEntities.TBLARACZIMMET" />
+    <EntitySet Name="TBLATOLYEBOLUM" EntityType="belediyeEntities.TBLATOLYEBOLUM" />
+    <EntitySet Name="TBLATOLYEUSTALAR" EntityType="belediyeEntities.TBLATOLYEUSTALAR" />
+    <EntitySet Name="TBLAYARLAR" EntityType="belediyeEntities.TBLAYARLAR" />
+    <EntitySet Name="TBLBAKIMGRUBU" EntityType="belediyeEntities.TBLBAKIMGRUBU" />
+    <EntitySet Name="TBLBAKIMTANIM" EntityType="belediyeEntities.TBLBAKIMTANIM" />
+    <EntitySet Name="TBLBAKIMYERI" EntityType="belediyeEntities.TBLBAKIMYERI" />
+    <EntitySet Name="TBLBELDBIRIMLER" EntityType="belediyeEntities.TBLBELDBIRIMLER" />
+    <EntitySet Name="TBLBELDMUDURLUK" EntityType="belediyeEntities.TBLBELDMUDURLUK" />
+    <EntitySet Name="TBLBIRIMYETKILILERI" EntityType="belediyeEntities.TBLBIRIMYETKILILERI" />
+    <EntitySet Name="TBLDEPOFIS" EntityType="belediyeEntities.TBLDEPOFIS" />
+    <EntitySet Name="TBLDEPOFISHRKT" EntityType="belediyeEntities.TBLDEPOFISHRKT" />
+    <EntitySet Name="TBLFIRMALAR" EntityType="belediyeEntities.TBLFIRMALAR" />
+    <EntitySet Name="TBLFORMKULLANICI" EntityType="belediyeEntities.TBLFORMKULLANICI" />
+    <EntitySet Name="TBLHAKARACHRKT" EntityType="belediyeEntities.TBLHAKARACHRKT" />
+    <EntitySet Name="TBLHAKEDISANA" EntityType="belediyeEntities.TBLHAKEDISANA" />
+    <EntitySet Name="TBLHAKEDISARACLAR" EntityType="belediyeEntities.TBLHAKEDISARACLAR" />
+    <EntitySet Name="TBLHAKEDISTIP" EntityType="belediyeEntities.TBLHAKEDISTIP" />
+    <EntitySet Name="TBLHAKEDISTIPHRKT" EntityType="belediyeEntities.TBLHAKEDISTIPHRKT" />
+    <EntitySet Name="TBLIDARISARTHRKT" EntityType="belediyeEntities.TBLIDARISARTHRKT" />
+    <EntitySet Name="TBLIDARISARTNAME" EntityType="belediyeEntities.TBLIDARISARTNAME" />
+    <EntitySet Name="TBLIHALELER" EntityType="belediyeEntities.TBLIHALELER" />
+    <EntitySet Name="TBLIHLHAKEDIS" EntityType="belediyeEntities.TBLIHLHAKEDIS" />
+    <EntitySet Name="TBLISEMIRDURUM" EntityType="belediyeEntities.TBLISEMIRDURUM" />
+    <EntitySet Name="TBLISEMRI" EntityType="belediyeEntities.TBLISEMRI" />
+    <EntitySet Name="TBLISEMRIBAKIMLAR" EntityType="belediyeEntities.TBLISEMRIBAKIMLAR" />
+    <EntitySet Name="TBLISEMRIEKRYNL" EntityType="belediyeEntities.TBLISEMRIEKRYNL" />
+    <EntitySet Name="TBLISLEMTIPI" EntityType="belediyeEntities.TBLISLEMTIPI" />
+    <EntitySet Name="TBLKULLANICILAR" EntityType="belediyeEntities.TBLKULLANICILAR" />
+    <EntitySet Name="TBLLOG" EntityType="belediyeEntities.TBLLOG" />
+    <EntitySet Name="TBLMALZBIRIM" EntityType="belediyeEntities.TBLMALZBIRIM" />
+    <EntitySet Name="TBLMALZBOLUM" EntityType="belediyeEntities.TBLMALZBOLUM" />
+    <EntitySet Name="TBLMALZDEPO" EntityType="belediyeEntities.TBLMALZDEPO" />
+    <EntitySet Name="TBLMALZEMELER" EntityType="belediyeEntities.TBLMALZEMELER" />
+    <EntitySet Name="TBLMALZGRUP" EntityType="belediyeEntities.TBLMALZGRUP" />
+    <EntitySet Name="TBLMALZGRUP2" EntityType="belediyeEntities.TBLMALZGRUP2" />
+    <EntitySet Name="TBLMALZKDV" EntityType="belediyeEntities.TBLMALZKDV" />
+    <EntitySet Name="TBLMALZMARKA" EntityType="belediyeEntities.TBLMALZMARKA" />
+    <EntitySet Name="TBLMENU" EntityType="belediyeEntities.TBLMENU" />
+    <EntitySet Name="TBLPERIZINYILLARI" EntityType="belediyeEntities.TBLPERIZINYILLARI" />
+    <EntitySet Name="TBLPERSEGITIMDRM" EntityType="belediyeEntities.TBLPERSEGITIMDRM" />
+    <EntitySet Name="TBLPERSEHLIYET" EntityType="belediyeEntities.TBLPERSEHLIYET" />
+    <EntitySet Name="TBLPERSIZINDURUM" EntityType="belediyeEntities.TBLPERSIZINDURUM" />
+    <EntitySet Name="TBLPERSKURUMGOREV" EntityType="belediyeEntities.TBLPERSKURUMGOREV" />
+    <EntitySet Name="TBLPERSMESAI" EntityType="belediyeEntities.TBLPERSMESAI" />
+    <EntitySet Name="TBLPERSONEL" EntityType="belediyeEntities.TBLPERSONEL" />
+    <EntitySet Name="TBLPERSONELDURUM" EntityType="belediyeEntities.TBLPERSONELDURUM" />
+    <EntitySet Name="TBLPERSONELISTIHDAMDURUM" EntityType="belediyeEntities.TBLPERSONELISTIHDAMDURUM" />
+    <EntitySet Name="TBLPERSONELIZIN" EntityType="belediyeEntities.TBLPERSONELIZIN" />
+    <EntitySet Name="TBLPERSUNVAN" EntityType="belediyeEntities.TBLPERSUNVAN" />
+    <EntitySet Name="TBLPERTOPLANTI" EntityType="belediyeEntities.TBLPERTOPLANTI" />
+    <EntitySet Name="TBLSABITLER" EntityType="belediyeEntities.TBLSABITLER" />
+    <EntitySet Name="TBLTALEP" EntityType="belediyeEntities.TBLTALEP" />
+    <EntitySet Name="TBLTALEPFIS" EntityType="belediyeEntities.TBLTALEPFIS" />
+    <EntitySet Name="TBLTALEPFISHRKT" EntityType="belediyeEntities.TBLTALEPFISHRKT" />
+    <EntitySet Name="TBLTALEPHRKT" EntityType="belediyeEntities.TBLTALEPHRKT" />
+    <EntitySet Name="TBLTALEPTEKNIKSART" EntityType="belediyeEntities.TBLTALEPTEKNIKSART" />
+    <EntitySet Name="TBLTASITGOREV" EntityType="belediyeEntities.TBLTASITGOREV" />
+    <EntitySet Name="TBLTASITPERS" EntityType="belediyeEntities.TBLTASITPERS" />
+    <EntitySet Name="TBLTEKLIF" EntityType="belediyeEntities.TBLTEKLIF" />
+    <EntitySet Name="TBLTEKLIFHRKT" EntityType="belediyeEntities.TBLTEKLIFHRKT" />
+    <EntitySet Name="TBLTEKLIFIDARISART" EntityType="belediyeEntities.TBLTEKLIFIDARISART" />
+    <EntitySet Name="TBLTEKNIKSART" EntityType="belediyeEntities.TBLTEKNIKSART" />
+    <EntitySet Name="TBLTEKNIKSARTHRKT" EntityType="belediyeEntities.TBLTEKNIKSARTHRKT" />
+    <EntitySet Name="TBLVARYOK" EntityType="belediyeEntities.TBLVARYOK" />
+    <EntitySet Name="TBLYAKITKARTI" EntityType="belediyeEntities.TBLYAKITKARTI" />
+    <EntitySet Name="TBLYAKITKONTFORM" EntityType="belediyeEntities.TBLYAKITKONTFORM" />
+    <EntitySet Name="TBLYAZIEKLERI" EntityType="belediyeEntities.TBLYAZIEKLERI" />
+    <EntitySet Name="TBLYETKILIMZA" EntityType="belediyeEntities.TBLYETKILIMZA" />
+    <EntitySet Name="TBLFIRMASEKTOR" EntityType="belediyeEntities.TBLFIRMASEKTOR" />
+  </EntityContainer>
+  <EntityType Name="FAALIYET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TARIH" Type="DateTime" Precision="0" />
+    <Property Name="YILI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ARACBAKIMATOLYE" Type="Int32" />
+    <Property Name="ARACBAKIMARAZI" Type="Int32" />
+    <Property Name="ARACBAKIMDIS" Type="Int32" />
+    <Property Name="YAGBAKIM" Type="Int32" />
+    <Property Name="ZORUNLUTRFKSIGORTA" Type="Int32" />
+    <Property Name="MUAYENE" Type="Int32" />
+    <Property Name="BAIKRESMI" Type="Int32" />
+    <Property Name="BAIKHIZMET" Type="Int32" />
+    <Property Name="YAKITMOTORIN" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="YAKITBENZIN" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RESMIKIRALIKMOTORIN" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="RESMIKIRALIKBENZIN" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SUBEMUDURU" Type="Int32" />
+    <Property Name="AYI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="HAKEDISAKARYAKIT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PLAKA" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="HAKEDISYDKARAC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PLAKA" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="BASLAMATARIHI" Type="DateTime" Precision="0" />
+    <Property Name="CIKISTARIHI" Type="DateTime" Precision="0" />
+    <Property Name="SIRKETID" Type="Int32" />
+    <Property Name="ARACID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TAHARACDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ARACDURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TAHARACHGS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="HGSTARIH" Type="DateTime" Precision="3" />
+    <Property Name="HGSETIKETNO" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="GUNCELARAC" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="GUNCELTARIH" Type="DateTime" Precision="3" />
+    <Property Name="IPTALTARIH" Type="DateTime" Precision="3" />
+    <Property Name="ILGILINOT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TAHARACTIPI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ARACTIPI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TAHARIZANEDENI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ARIZANEDENI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TAHBAKIMDERECE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BAKIMDERECE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TAHBAKIMTURU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BAKIMTURU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TAHMODELYILI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YILI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLARACGRUBU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GRUPADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLARACGRUBU2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GRUPADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLARACIHALEGRUP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IHALEADI" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLARACLAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VERILDIGIILILCE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PLAKA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ARACACIKLAMA" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TAHSPLAKA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TAHSPLKTARIH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ESKIPLAKA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TESCILSIRANO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ILKTESCILTARIHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TESCILTARIHI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MARKAID" Type="Int32" />
+    <Property Name="MODEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CINSI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TICARIADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TIPI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RENGI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MOTORNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SASENO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SILINDIRHACMI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MOTORGUCU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BEYGIRGUCU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TEKERLEKADEDI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YURUYENAKSAMI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LASTIKEBADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DIGEROZELLIKLER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MUAYENEGECSUR" Type="DateTime" Precision="3" />
+    <Property Name="TRAFIKSGORTA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KASKO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BELGESERINO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ARACFIRMAID" Type="Int32" />
+    <Property Name="BELDBIRIMID" Type="Int32" />
+    <Property Name="BELDMUDURLUKID" Type="Int32" />
+    <Property Name="TAHSISEDILENID" Type="Int32" />
+    <Property Name="ARACKULPERSID" Type="Int32" />
+    <Property Name="ARACGRUBUID" Type="Int32" />
+    <Property Name="ARACGRUBU2ID" Type="Int32" />
+    <Property Name="YAKITID" Type="Int32" />
+    <Property Name="YKTYAKMATURU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="STDYKYAKIT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ARACDURUMID" Type="Int32" />
+    <Property Name="ARACTIPIID" Type="Int32" />
+    <Property Name="TKPVARYOK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YEDEKANAHTAR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YEDEKANHTRACKLM" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="GOREVBITIMTARIH" Type="DateTime" Precision="3" />
+    <Property Name="GOREVDURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ILGILINOT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ARACRESIM1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ARACRESIM2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TAKIPVARYOKID" Type="Int32" />
+    <Property Name="SIRANO" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="GUNCELDEGERI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YENIDEGERI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PARABIRIMI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GENELBAKIMKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MOTORYAGKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SANZIMANYAGKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DIFERANSIYELYAGKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HIDROLIKYAGKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YENIDEGERTARIH" Type="DateTime" Precision="0" />
+    <Property Name="HGSVARYOK" Type="Int32" />
+    <Property Name="EGZOZKONTROL" Type="DateTime" Precision="3" />
+    <Property Name="TRAFIKSGORTA2" Type="DateTime" Precision="3" />
+    <Property Name="ARACIHALEGRUPID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLARACMARKA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ARACMARKA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLARACMESTKP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TARIHSAAT" Type="DateTime" Precision="7" />
+    <Property Name="PLAKA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MESAIICI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MESAIDISI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TOPLAMKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CALISMASURESI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLARACRESIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="ARACRESIMARKA" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="ARACRESIMON" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLARACTRFCEZA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KAYITTARIHI" Type="DateTime" Precision="7" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="FISNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CEZATARIHI" Type="DateTime" Precision="7" />
+    <Property Name="CEZASAATI" Type="DateTime" Precision="7" />
+    <Property Name="CEZAACIKLAMA" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CEZATUTARI" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CEZATURU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BELDBIRIMID" Type="Int32" />
+    <Property Name="BELDMUDURLUKID" Type="Int32" />
+    <Property Name="ODEMEDURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ILGILINOT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLARACYEDEKALIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TARIH" Type="DateTime" Precision="7" />
+    <Property Name="SAAT" Type="DateTime" Precision="7" />
+    <Property Name="DEGISIMSEBEBI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GIDENARACID" Type="Int32" />
+    <Property Name="YEDEKARAC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YEDEKARACMARKA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ILGILINOT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="TESLIMALANID" Type="Int32" />
+    <Property Name="FIRMAYETKILISI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TESLIMEDENID" Type="Int32" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLARACZIMMET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="TARIH" Type="DateTime" Precision="7" />
+    <Property Name="SAAT" Type="DateTime" Precision="7" />
+    <Property Name="ZIMMETALANID" Type="Int32" />
+    <Property Name="TAHSISEDILENID" Type="Int32" />
+    <Property Name="ONCEKIARACI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BELDBIRIMID" Type="Int32" />
+    <Property Name="BELDMUDURLUKID" Type="Int32" />
+    <Property Name="ILGILINOT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLATOLYEBOLUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BOLUMADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLATOLYEUSTALAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ATOLYEID" Type="Int32" />
+    <Property Name="USTAADISOYADI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLAYARLAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BIRIMADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PERSONEID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLBAKIMGRUBU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GRUPADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLBAKIMTANIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ATOLYEID" Type="Int32" />
+    <Property Name="BAKIMGRUBUID" Type="Int32" />
+    <Property Name="YAPILANBAKIM" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLBAKIMYERI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLBELDBIRIMLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BELDBIRIMADI" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLBELDMUDURLUK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BELDBIRIMID" Type="Int32" />
+    <Property Name="BELDMUDURLUK" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLBIRIMYETKILILERI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YETKIALANI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YETKILIID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLDEPOFIS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISEMRIID" Type="Int32" />
+    <Property Name="TARIH" Type="DateTime" Precision="7" />
+    <Property Name="SAAT" Type="DateTime" Precision="7" />
+    <Property Name="FISNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ALANUSTAID" Type="Int32" />
+    <Property Name="FIRMAID" Type="Int32" />
+    <Property Name="ISLEMTIPIID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TOPTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TOPKDVTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FISTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GCKOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TRANSFERID" Type="Int32" />
+    <Property Name="TRANSDEPOGCID" Type="Int32" />
+    <Property Name="IMZADEPOYETKILIID" Type="Int32" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="TALEPFISID" Type="Int32" />
+    <Property Name="GIRISICIKISYAPID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLDEPOFISHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DEPOFISID" Type="Int32" />
+    <Property Name="MALZEMEID" Type="Int32" />
+    <Property Name="MALZACIKLAMA" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="BIRIMID" Type="Int32" />
+    <Property Name="MIKTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GIRISMIKTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CIKISMIKTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GIRISTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CIKISTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="KDVORAN" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="KDVTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SATIRTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="GCKOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DEPOID" Type="Int32" />
+    <Property Name="MALZMARKAID" Type="Int32" />
+    <Property Name="MALZSERINO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MALZURTTARIH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DEGISIMKMSI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SONRAKIDEGKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLFIRMALAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SEKTORID" Type="Int32" />
+    <Property Name="FIRMAADI" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="FALIYETALANI" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="YETKILISI" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="FIRMAADRES" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="VERGIDAIRE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="VERGINO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TELEFON" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CEPTELEFON" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="WEBADRES" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ILGILINOT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLFORMKULLANICI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KULLANICIID" Type="Int32" />
+    <Property Name="KOMUTADI" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="SALTOKUNUR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KAYIT" Type="Boolean" />
+    <Property Name="SİL" Type="Boolean" />
+    <Property Name="GUNCELLEME" Type="Boolean" />
+    <Property Name="LISTELEME" Type="Boolean" />
+    <Property Name="KOMUTID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLHAKARACHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AYI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YILI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="ARACTIPI" Type="Int32" />
+    <Property Name="BASLATARİHİ" Type="DateTime" Precision="0" />
+    <Property Name="CIKISTARİHİ" Type="DateTime" Precision="0" />
+    <Property Name="CALISMAGUNSAYISI" Type="Int32" />
+    <Property Name="SERVISBAKIMGUNSAYISI" Type="Int32" />
+    <Property Name="EKSIKGUNSAYISI" Type="Int32" />
+    <Property Name="BIR" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="IKI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="UC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DORT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="BES" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ALTI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YEDI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="SEKIZ" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DOKUZ" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ON" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ONBIR" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ONIKI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ONUC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ONDORT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ONBES" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ONALTI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ONYEDI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ONSEKIZ" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ONDOKUZ" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMIBIR" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMIIKI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMIUC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMIDORT" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMIBES" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMIALTI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMIYEDI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMISEKIZ" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YIRMIDOKUZ" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="OTUZ" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="OTUZBIR" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="YEDEKARACID" Type="Int32" />
+    <Property Name="HAKANAID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLHAKEDISANA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AYI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YILI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISYERTSLTRHBASLAMA" Type="DateTime" Precision="0" />
+    <Property Name="SOZLESMEYEGOREISINSURESI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISYERTSLTRHBITIS" Type="DateTime" Precision="0" />
+    <Property Name="NOSU" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="SOZBEDEL" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SUKTARIH" Type="DateTime" Precision="0" />
+    <Property Name="SUKSAYISI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SUKVERILANSURE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SUKISBTRMTRH" Type="DateTime" Precision="0" />
+    <Property Name="ALTSOZLESMEBEDELI" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ALTONAYTARIHI" Type="DateTime" Precision="0" />
+    <Property Name="ALTONAYSAYISI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ALTEKSOZLESMEBEDELI" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ALTTOPLMASZLMBEDELI" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLHAKEDISARACLAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PLAKA" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="BASLAMATARIHI" Type="DateTime" Precision="0" />
+    <Property Name="CIKISTARIHI" Type="DateTime" Precision="0" />
+    <Property Name="SIRKETID" Type="Int32" />
+    <Property Name="TIPID" Type="Int32" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="YEDEKARACID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLHAKEDISTIP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TIPADI" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="BIRIMFIYATI" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MIKTARI" Type="Int32" />
+    <Property Name="CALISMAGUNSAYISI" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLHAKEDISTIPHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HAKEDISTIPID" Type="Int32" />
+    <Property Name="MIKTAR" Type="Int32" />
+    <Property Name="CALISMAGUNSAYISI" Type="Int32" />
+    <Property Name="ONCEKITPLGUNSAYISI" Type="Int32" />
+    <Property Name="HAKANAID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLIDARISARTHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDARISARTID" Type="Int32" />
+    <Property Name="SIRANO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ACIKLAMA" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLIDARISARTNAME">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDARISARTADI" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLIHALELER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IHALEKAYITNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDARENINADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YUKLENICIADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISINTANIMI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SOZLESMETARIHI" Type="DateTime" Precision="7" />
+    <Property Name="SOZLESMEBEDELI" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ISINSURESI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISBITISTARIHI" Type="DateTime" Precision="7" />
+    <Property Name="IHALEDURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLIHLHAKEDIS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IHALEID" Type="Int32" />
+    <Property Name="TARIH" Type="DateTime" Precision="7" />
+    <Property Name="HAKEDISNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HAKEDISDONEM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HAKEDISMIKTAR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HAKEDISTUTARI" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLISEMIRDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLISEMRI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ATOLYEID" Type="Int32" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="GIRISTARIH" Type="DateTime" Precision="7" />
+    <Property Name="GIRISSAAT" Type="DateTime" Precision="7" />
+    <Property Name="CIKISTARIH" Type="DateTime" Precision="7" />
+    <Property Name="CIKISSAAT" Type="DateTime" Precision="7" />
+    <Property Name="ARIZANEDENIID" Type="Int32" />
+    <Property Name="BILDIRILENARIZA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ISEMRIDURUMID" Type="Int32" />
+    <Property Name="BAKIMYERIID" Type="Int32" />
+    <Property Name="BAKIMYERACKLM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ARACIGETIREN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BAKIMKMSI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SONRAKIBKMKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SONRAKIBKMTRH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BAKIMSAATI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SONRAKIBKMSAAT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISEMRISIRANO" Type="Int32" />
+    <Property Name="YAPILANBAKIMOZETI" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IMZAATOLYESEFID" Type="Int32" />
+    <Property Name="ISBITIMORANI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="BAKIMTURUID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BAKIMDERECESIID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ATIKYAG" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLISEMRIBAKIMLAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ISEMRIID" Type="Int32" />
+    <Property Name="ATOLYEID" Type="Int32" />
+    <Property Name="BAKIMYAPUSTAID" Type="Int32" />
+    <Property Name="BAKIMGRUBUID" Type="Int32" />
+    <Property Name="YAPILANBAKIM" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLISEMRIEKRYNL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YENILE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLISLEMTIPI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ISLEMTIPI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HARFI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BOLUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLKULLANICILAR">
+    <Key>
+      <PropertyRef Name="IDX" />
+    </Key>
+    <Property Name="ID" Type="Int32" />
+    <Property Name="SIRANO" Type="Int32" />
+    <Property Name="TURU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="KULLANICIADI" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="UNVANI" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GOREVYERI" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="SIFRE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SIFRETEKRAR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EKLE" Type="Int32" />
+    <Property Name="DUZENLE" Type="Int32" />
+    <Property Name="SIL" Type="Int32" />
+    <Property Name="OKUMA" Type="Int32" />
+    <Property Name="BELDBIRIMID" Type="Int32" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="SAVEDATE" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+    <Property Name="EDITUSER" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="EDITDATE" Type="String" MaxLength="19" FixedLength="false" Unicode="false" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EDITMAC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SAVEIP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EDITIP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IDX" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ADISOYADI" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="PERSONELID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLLOG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ISLEMSAYFASI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISLEMTURU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISLEMINID" Type="Int32" />
+    <Property Name="TARIH" Type="DateTime" Precision="0" />
+    <Property Name="SAAT" Type="Time" Precision="7" />
+    <Property Name="KULLANICIADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KULLANICIID" Type="Int32" />
+    <Property Name="IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MAC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLMALZBIRIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BIRIMADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLMALZBOLUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BOLUMADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLMALZDEPO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DEPOADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITUSER" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLMALZEMELER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UFKOD" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OEMKOD" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MALZEMEADI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DIGERADI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="KULLANIMYERI" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="BIRIMID" Type="Int32" />
+    <Property Name="GRUPID" Type="Int32" />
+    <Property Name="GRUPID2" Type="Int32" />
+    <Property Name="KDVID" Type="Int32" />
+    <Property Name="BOLUMID" Type="Int32" />
+    <Property Name="RAFNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GOZNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BARKOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TARIHKONTROL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SERINOKONTROL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KMKONTROL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MALZEMEFOTO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KAYITTIPIID" Type="Int32" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="GIRIS" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CIKIS" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="KALAN" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLMALZGRUP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MALZEMEGRUP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLMALZGRUP2">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MALZEMEGRUP2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLMALZKDV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KDVGRUP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KDVORAN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLMALZMARKA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MALZMARKA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLMENU">
+    <Key>
+      <PropertyRef Name="IDX" />
+    </Key>
+    <Property Name="ID" Type="Int32" />
+    <Property Name="BASLIK" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="KOMUTADI" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="IDX" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="TBLPERIZINYILLARI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YIL" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLPERSEGITIMDRM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EGITIMDURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLPERSEHLIYET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EHLIYET" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLPERSIZINDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PERSONELID" Type="Int32" />
+    <Property Name="PERSONELIZINID" Type="Int32" />
+    <Property Name="IZINYILI" Type="Int32" />
+    <Property Name="IZINHAKKI" Type="Int32" />
+    <Property Name="KULLANILANIZIN" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLPERSKURUMGOREV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KURUMGOREV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLPERSMESAI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PERSID" Type="Int32" />
+    <Property Name="MESAITARIHI" Type="DateTime" Precision="7" />
+    <Property Name="MESAISAATI" Type="Int32" />
+    <Property Name="ACIKLAMA" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLPERSONEL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TCKIMLIKNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SICILNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SOYADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADISOYADI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UNVANID" Type="Int32" />
+    <Property Name="GOREVUNVANID" Type="Int32" />
+    <Property Name="EGITIMID" Type="Int32" />
+    <Property Name="PERSISTIHDAMIID" Type="Int32" />
+    <Property Name="EHLIYETID" Type="Int32" />
+    <Property Name="EHLVERTARIH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BELDBIRIMIID" Type="Int32" />
+    <Property Name="BELDMUDURLUKID" Type="Int32" />
+    <Property Name="GOREVYERI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KANGRUPID" Type="Int32" />
+    <Property Name="YETKILIIMZAID" Type="Int32" />
+    <Property Name="IKMADRES" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="CEPTELEFON" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CEPTELEFON2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="COCUKKIZ" Type="Int32" />
+    <Property Name="COCUKERKEK" Type="Int32" />
+    <Property Name="COCUKTOPLAM" Type="Int32" />
+    <Property Name="SIRANO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="PERSDURUMID" Type="Int32" />
+    <Property Name="IZINTOPLAMI" Type="Int32" />
+    <Property Name="KULLANILANIZIN" Type="Int32" />
+    <Property Name="KALANIZIN" Type="Int32" />
+    <Property Name="ISEGIRISTARIHI" Type="DateTime" Precision="3" />
+    <Property Name="DOGUMTARIHI" Type="DateTime" Precision="3" />
+    <Property Name="PARAFTANIM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RESIM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RESIMPER" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TBLPERSONELDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLPERSONELISTIHDAMDURUM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLPERSONELIZIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PERSID" Type="Int32" />
+    <Property Name="IZINTURU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IZINYILLARI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IZINSURESI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BASLANGICTARIHI" Type="DateTime" Precision="7" />
+    <Property Name="BASLANGICSAATI" Type="DateTime" Precision="3" />
+    <Property Name="BITISTARIHI" Type="DateTime" Precision="7" />
+    <Property Name="BITISSAATI" Type="DateTime" Precision="3" />
+    <Property Name="IZINGUNSAY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GOREVEBASTARIH" Type="DateTime" Precision="7" />
+    <Property Name="IZINDEBULADRES" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ONAYTARIH" Type="DateTime" Precision="7" />
+    <Property Name="IZINDURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SBMUDURID" Type="Int32" />
+    <Property Name="DAIREBSKID" Type="Int32" />
+    <Property Name="INSANDAIREBSKID" Type="Int32" />
+    <Property Name="GENELSEKYRDID" Type="Int32" />
+    <Property Name="MUDURYERINE" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLPERSUNVAN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UNVAN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLPERTOPLANTI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YAZIISLERISRMLS" Type="Int32" />
+    <Property Name="ATOLYESRMLS" Type="Int32" />
+    <Property Name="AMBARSRMLS" Type="Int32" />
+    <Property Name="ISMAKINASISRMLS" Type="Int32" />
+    <Property Name="IKMALBIRIMSRMLS" Type="Int32" />
+    <Property Name="AKARYKTSRMLS" Type="Int32" />
+    <Property Name="KAYNAKISTANYONSEF" Type="Int32" />
+    <Property Name="KAMYONTAMIRUSTABAS" Type="Int32" />
+    <Property Name="OTOLASTIKUSTABASI" Type="Int32" />
+    <Property Name="AMBARAYNIYATSRMLS" Type="Int32" />
+    <Property Name="TOPLANTITARIHI" Type="DateTime" Precision="0" />
+    <Property Name="TOPLANTIYONETICISI" Type="Int32" />
+    <Property Name="TOPLANTIKONUSU" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DAIREBASK_KODU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RAPORNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TOPLANTISURESI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SONRAKITOPLANTITARIHI" Type="DateTime" Precision="0" />
+    <Property Name="GUNDEMMADDELERI" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="KARARACIKLAMASI" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ELEKTRIKSRMLS" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLSABITLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SABITACIKLAMA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SABITYERI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLTALEP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TARIH" Type="DateTime" Precision="7" />
+    <Property Name="SAAT" Type="DateTime" Precision="7" />
+    <Property Name="BELGESAYI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BELGEKONU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BELGETARIH" Type="DateTime" Precision="3" />
+    <Property Name="ISINADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISINTURUMIKTARI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISINYAPYERI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BUTCETERTIBI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IHALEUSULU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YAKLASIKMALIYET" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KULLODENEKTUTAR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ATOLYESEFID" Type="Int32" />
+    <Property Name="DEPOYETKILIID" Type="Int32" />
+    <Property Name="SORUMLUID" Type="Int32" />
+    <Property Name="MUDURID" Type="Int32" />
+    <Property Name="DAIREBSKID" Type="Int32" />
+    <Property Name="GENELSEKYRDID" Type="Int32" />
+    <Property Name="GENELSEKRETERID" Type="Int32" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="BILGINOTU" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TEKLIFID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLTALEPFIS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ISEMRIID" Type="Int32" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TARIH" Type="DateTime" Precision="7" />
+    <Property Name="SAAT" Type="DateTime" Precision="7" />
+    <Property Name="FIRMAID" Type="Int32" />
+    <Property Name="FISTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TALEPDURUMID" Type="Int32" />
+    <Property Name="TALEPIPTALACIKLAMA" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="TALEPEDENUSTAID" Type="Int32" />
+    <Property Name="ATOLYESEFID" Type="Int32" />
+    <Property Name="DEPOYETKILIID" Type="Int32" />
+    <Property Name="MUDURID" Type="Int32" />
+    <Property Name="MUDONAYZAMAN" Type="DateTime" Precision="7" />
+    <Property Name="TALEPKAYITID" Type="Int32" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLTALEPFISHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TALEPFISID" Type="Int32" />
+    <Property Name="MALZEMEID" Type="Int32" />
+    <Property Name="MALZACIKLAMA" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="BIRIMID" Type="Int32" />
+    <Property Name="ISTENENMIKTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MIKTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TUTAR" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLTALEPHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TALEPID" Type="Int32" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="MALZEMEID" Type="Int32" />
+    <Property Name="MALZACIKLAMA" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="BIRIMID" Type="Int32" />
+    <Property Name="MIKTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TALEPFISID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLTALEPTEKNIKSART">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TALEPID" Type="Int32" />
+    <Property Name="SIRANO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ACIKLAMA" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLTASITGOREV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PLAKAID" Type="Int32" />
+    <Property Name="SOFORID" Type="Int32" />
+    <Property Name="BIRIMID" Type="Int32" />
+    <Property Name="KURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GOREVTURU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GIDILECEKYER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CIKISZAMANI" Type="DateTime" Precision="7" />
+    <Property Name="CIKISTARIH" Type="DateTime" Precision="3" />
+    <Property Name="CIKISSAAT" Type="DateTime" Precision="3" />
+    <Property Name="CIKISKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DONUSZAMANI" Type="DateTime" Precision="7" />
+    <Property Name="DONUSTARIH" Type="DateTime" Precision="3" />
+    <Property Name="DONUSSAAT" Type="DateTime" Precision="3" />
+    <Property Name="DONUSKM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MESAIBITISSAATI" Type="DateTime" Precision="7" />
+    <Property Name="GUNUNADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MESAIMIKTARI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MUDURID" Type="Int32" />
+    <Property Name="MUDONAYZAMAN" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="BIRIMAMIRIID" Type="Int32" />
+    <Property Name="GOREVGRUPID" Type="Int32" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLTASITPERS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TASITID" Type="Int32" />
+    <Property Name="PERSONELID" Type="Int32" />
+    <Property Name="UNVANID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLTEKLIF">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TARIH" Type="DateTime" Precision="7" />
+    <Property Name="SAAT" Type="DateTime" Precision="7" />
+    <Property Name="TEKLIFKONUSU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KAZANANFIRMAID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FATURATARIHI" Type="DateTime" Precision="7" />
+    <Property Name="FATURANO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FATURATUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="KDVTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TOPLAMTUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FATTUTARYAZIYLA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SAKARARTARIHI" Type="DateTime" Precision="7" />
+    <Property Name="SAKARARNO" Type="Int32" />
+    <Property Name="IMZABIRIMAMIRIID" Type="Int32" />
+    <Property Name="IMZAMUDURID" Type="Int32" />
+    <Property Name="DAIREBSKID" Type="Int32" />
+    <Property Name="OLURILGISI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="FIRMA1ID" Type="Int32" />
+    <Property Name="FIRMA2ID" Type="Int32" />
+    <Property Name="FIRMA3ID" Type="Int32" />
+    <Property Name="FIRMA4ID" Type="Int32" />
+    <Property Name="FIRMA5ID" Type="Int32" />
+    <Property Name="FIRMA6ID" Type="Int32" />
+    <Property Name="FIRMA7ID" Type="Int32" />
+    <Property Name="FIRMA8ID" Type="Int32" />
+    <Property Name="TALEPID" Type="Int32" />
+    <Property Name="KOMUYE1ID" Type="Int32" />
+    <Property Name="KOMUYE2ID" Type="Int32" />
+    <Property Name="KOMBSKID" Type="Int32" />
+    <Property Name="AITOLDBIRIM" Type="Int32" />
+    <Property Name="KESINLESTIR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PIYASAUYE1ID" Type="Int32" />
+    <Property Name="PIYASAUYE2ID" Type="Int32" />
+    <Property Name="PIYASABSKID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLTEKLIFHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TEKLIFID" Type="Int32" />
+    <Property Name="ARACID" Type="Int32" />
+    <Property Name="MALZEMEID" Type="Int32" />
+    <Property Name="MALZACIKLAMA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BIRIMID" Type="Int32" />
+    <Property Name="MIKTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="MARKA" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="BIRIMFIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA1ID" Type="Int32" />
+    <Property Name="F1BIRIMFIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="F1TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA2ID" Type="Int32" />
+    <Property Name="F2BIRIMFIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="F2TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA3ID" Type="Int32" />
+    <Property Name="F3BIRIMFIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="F3TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA4ID" Type="Int32" />
+    <Property Name="F4BIRIMFIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="F4TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA5ID" Type="Int32" />
+    <Property Name="F5BIRIMFIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="F5TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA6ID" Type="Int32" />
+    <Property Name="F6BIRIMFIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="F6TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA7ID" Type="Int32" />
+    <Property Name="F7BIRIMFIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="F7TUTAR" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FIRMA8ID" Type="Int32" />
+    <Property Name="F8BIRIMFIYAT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="F8TUTAR" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="TBLTEKLIFIDARISART">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TEKLIFID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SIRANO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ACIKLAMA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLTEKNIKSART">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ISINADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="DateTime" Precision="7" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLTEKNIKSARTHRKT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TEKNIKID" Type="Int32" />
+    <Property Name="SIRANO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ACIKLAMA" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLVARYOK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ADI" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLYAKITKARTI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KARTNO" Type="Int32" />
+    <Property Name="TCNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SOFORADISOYADI" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CALISTIGIBIRIM" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CALISTIGIMUDURLUK" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="KIMLIKONYUZU" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="YUKLEYICIFIRMMA" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="TELEFON" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TESLIMALAN" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="TESLIMALANUNVAN" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ADRES" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ACIKLAMA" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TESLIMEDEN" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="TESLIMEDENUNVAN" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="SICILNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SURUCUBELGE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TARIH" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="TBLYAKITKONTFORM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KOD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PLAKA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EBYSTARIH" Type="DateTime" Precision="7" />
+    <Property Name="EBYSSAYI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GIRISZAMAN" Type="DateTime" Precision="7" />
+    <Property Name="CIKISZAMAN" Type="DateTime" Precision="7" />
+    <Property Name="BIRIMID" Type="Int32" />
+    <Property Name="MUDURLUKID" Type="Int32" />
+    <Property Name="SOFOROPERATOR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ISTASYONPERSID" Type="Int32" />
+    <Property Name="ILGILIBIRIMPERSID" Type="Int32" />
+    <Property Name="OTOMASYONPERSID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLYAZIEKLERI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ACIKLAMA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BIRIMTIPI" Type="Int32" />
+    <Property Name="DURUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBLYETKILIMZA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BELBSKNID" Type="Int32" />
+    <Property Name="GENELSKRTRID" Type="Int32" />
+    <Property Name="GENELSKRTRYRDMCID" Type="Int32" />
+    <Property Name="DAIREBSKNID" Type="Int32" />
+    <Property Name="SUBEMDRID" Type="Int32" />
+    <Property Name="ATOLYESEFID" Type="Int32" />
+    <Property Name="DEPOYETKILID" Type="Int32" />
+    <Property Name="TKLFSORUMLUID" Type="Int32" />
+    <Property Name="PYSARSTRMAUYE1ID" Type="Int32" />
+    <Property Name="PYSARSTRMAUYE2ID" Type="Int32" />
+    <Property Name="PYSARSTRMABSKNID" Type="Int32" />
+    <Property Name="KABULKOMUYE1ID" Type="Int32" />
+    <Property Name="KABULKOMUYE2ID" Type="Int32" />
+    <Property Name="KABULKOMBASKANID" Type="Int32" />
+    <Property Name="YAGSORUMLUSU" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TBLFIRMASEKTOR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SEKTORADI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEDATE" Type="DateTime" Precision="7" />
+    <Property Name="EDITUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EDITDATE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITMAC" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="SAVEIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="EDITIP" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
