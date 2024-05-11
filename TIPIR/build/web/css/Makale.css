@@ -1,0 +1,26 @@
+#Makale{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: white;
+    width: auto
+    
+}
+#MakaleBaslik{
+    padding-top: 1px;
+   
+  
+    width: auto;
+}
+
+#MakaleIcerik{
+    padding: 10px;
+    width: auto;
+}
+body{
+    background-color: #fffacd;
+    
+}
