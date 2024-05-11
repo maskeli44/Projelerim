@@ -1,0 +1,19 @@
+{
+    "columns": ["Şirket","Departman","Mühendis Sayısı"],
+    "rows": [{
+        "id": 1,
+      "Şirket": "Aselsan",
+      "Departman": "dep1",
+      "Mühendis Sayısı": "30"
+    }, {
+        "id": 2,
+        "Şirket": "Havelsan",
+        "Departman": "dep2",
+        "Mühendis Sayısı": "40"
+      }, {
+        "id": 3,
+        "Şirket": "Harran Üniversitesi",
+        "Departman": "dep3",
+        "Mühendis Sayısı": "50"
+      } ]
+  }
