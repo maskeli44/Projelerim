@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ac81f22b-26b9-408f-b0b5-dd75568a89a4" namespace="vize2.Database4" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="false" fieldNameCase="Unchanged" generateDefaultConstructors="false" generateClassesForViews="true" useNameOf="true" connectionStringName="Database4" createdInVersion="20.1.7.0" generateJsonSerializationContractResolver="false" generateServiceCollectionExtensions="false" lastModifiedInVersion="20.1.7.0" name="Database4" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <comments>
+    <dataBaseObjectModelHasComments Id="a36687ca-f3df-42a2-ba25-b204b2d30402">
+      <comment Id="1d451759-e5dc-4e54-8003-617c257fe1c6" text="The 'PrimaryKey' index is ignored, because 'id' is a key" name="AMBARComment">
+        <subjects>
+          <commentReferencesSubjects Id="1445e999-41e3-4b75-b351-8dd1c2f9aebb">
+            <xpObjectMoniker Id="8f0cbf5a-20e3-4b3d-83a1-b2658fd8b49b" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="5f28d10e-4150-4ece-8493-65aaba541aff">
+      <comment Id="0c0ea4b1-8797-4e9e-a025-a890980f7569" text="The 'PrimaryKey' index is ignored, because 'id' is a key" name="GirenCIKANComment">
+        <subjects>
+          <commentReferencesSubjects Id="6e2dd14a-7a1e-46ad-bc34-f3dc552b32f1">
+            <xpObjectMoniker Id="f4dfa5c5-2758-4ead-95b1-66611c5fc32c" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="814f9da1-69d5-476e-8d4c-642fc11b6093">
+      <comment Id="32e58b89-36bd-4911-b6a8-9e889f44d68b" text="The 'PrimaryKey' index is ignored, because 'id' is a key" name="KULLANICIPANELIComment">
+        <subjects>
+          <commentReferencesSubjects Id="721fd1ab-5144-438d-a949-416303f245ac">
+            <xpObjectMoniker Id="3490ed4d-6cd0-4ddc-8557-6eac57478c00" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="ee7f148b-c566-45df-9ac2-5f6fe2d0188b">
+      <comment Id="de8dccaa-1fb9-4f28-a153-d8131e78eddf" text="The 'PrimaryKey' index is ignored, because 'id' is a key;&#xD;&#xA;The 'STOKURUN_ad' index is ignored, because 'URUN_ad' is an association key" name="STOKComment">
+        <subjects>
+          <commentReferencesSubjects Id="b19d784a-f1c6-48e5-a063-e447bfb93231">
+            <xpObjectMoniker Id="461a56e6-2e61-4003-8556-a4d3e9ee16a0" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="773931ec-0a3a-48dd-ba3a-858135e9e1e2">
+      <comment Id="b6a8f2fe-0469-49a7-8c6a-0009420569ed" text="The 'PrimaryKey' index is ignored, because 'id' is a key" name="URUNComment">
+        <subjects>
+          <commentReferencesSubjects Id="f06159d3-8952-42f3-aced-0add8a1bec49">
+            <xpObjectMoniker Id="19e131f8-3b20-4d48-a5ef-2ae70f7fe368" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+  </comments>
+  <classes>
+    <dataBaseObjectModelHasClasses Id="7ca40373-1fd7-43c2-9f79-c0e0a340df37">
+      <xpObject Id="8f0cbf5a-20e3-4b3d-83a1-b2658fd8b49b" name="AMBAR" baseClass="XPLiteObject" userFileName="AMBAR" designerFileName="AMBAR.Designer" className="AMBAR" initialName="AMBAR" virtualBaseClass="XPLiteObject" persistent="AMBAR" virtualName="AMBAR">
+        <fields>
+          <generalXpObjectHasFields Id="8595dd6a-7569-40be-bbc9-b413b63466e0">
+            <field Id="267f6c28-f659-4748-be91-60771f22ca9d" name="adres" initialName="adres" persistent="adres" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="Unlimited" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="9c1c2194-81a9-4808-98ce-44d810934b63">
+            <field Id="dde39cfb-80c1-45eb-bb8d-7624f91e783c" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e5a6f529-2f8c-4e04-af1d-4ee4f942b74a">
+            <field Id="56479443-7bd6-4b25-a144-e9f0361e352a" name="kapasite" columnType="Int32" initialName="kapasite" persistent="kapasite" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#0" dbDefaultValue="0" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4b2e13f0-4c99-4f04-a41d-766ea77b649a">
+            <field Id="c11ed3cd-18a0-4e6d-ad65-7c3e3f790164" name="yetkili" initialName="yetkili" persistent="yetkili" virtualColumnType="KULLANICIPANELI" logicalType="KULLANICIPANELI" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="42286021-1ce0-4cd5-ab66-bf9a26868a59">
+      <xpObject Id="f4dfa5c5-2758-4ead-95b1-66611c5fc32c" name="GirenCIKAN" baseClass="XPLiteObject" userFileName="GirenCIKAN" designerFileName="GirenCIKAN.Designer" className="GirenCIKAN" initialName="GirenCIKAN" virtualBaseClass="XPLiteObject" persistent="GirenCIKAN" virtualName="GirenCIKAN">
+        <fields>
+          <generalXpObjectHasFields Id="8fb56937-ee19-48c4-adca-8dfe259d45c0">
+            <field Id="bd8a0c18-a241-45b5-a211-2f95ac05a235" name="alici" initialName="alici" persistent="alici" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="38d17827-1a8a-48b0-9788-da3320ad14a2">
+            <field Id="6fef68aa-bf59-48b2-b058-13ce45a14a49" name="gonderen" initialName="gonderen" persistent="gonderen" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="bd8f3b0f-c9d7-4e9c-a661-f111ffa3bc6e">
+            <field Id="d1e91dbc-e62c-44c2-ac52-a4572adf84f9" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fcbcde88-c333-49a9-8ad7-012b752d0477">
+            <field Id="56f2dd7d-cfdd-43ec-aa7a-80797dcb0218" name="islemtipi" initialName="islemtipi" persistent="islemtipi" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7420e3ff-1510-45a2-9aca-f3b78839492c">
+            <field Id="5c0a39fa-b583-425a-8fab-38e7edc015a3" name="tarih" columnType="DateTime" initialName="tarih" persistent="tarih" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="03e6ec87-61c1-4cef-a8bc-bd3f6074203d">
+            <field Id="7e837543-bb49-443b-99c4-85627c8bf50e" name="topdeger" initialName="topdeger" persistent="topdeger" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e7719a87-9e2f-4c4a-b8a1-3894e304b6b2">
+            <field Id="a6d65475-499d-4fe3-a911-ed367fc1568f" name="topmiktar" initialName="topmiktar" persistent="topmiktar" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8b4b1a53-07ce-4d1a-bcbc-f499ede07751">
+            <field Id="d6c91ad4-0a91-4654-a54b-1d257bf5d9a3" name="URUN_ad" initialName="URUN_ad" persistent="URUN_ad" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="1038d8f8-840d-4953-b914-cfb96ef28453">
+            <index Id="b412b620-04fa-44f8-9e32-a488b56b2106" name="GirenCIKANURUN_ad">
+              <fieldsInIndex>
+                <indexReferencesFields Id="c5fa1986-be8a-43d4-8d8b-eb234b221417">
+                  <fieldMoniker Id="d6c91ad4-0a91-4654-a54b-1d257bf5d9a3" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="6145b06e-acd4-4f94-b1a5-0f49a9e913f0">
+      <xpObject Id="3490ed4d-6cd0-4ddc-8557-6eac57478c00" name="KULLANICIPANELI" baseClass="XPLiteObject" userFileName="KULLANICIPANELI" designerFileName="KULLANICIPANELI.Designer" className="KULLANICIPANELI" initialName="KULLANICIPANELI" virtualBaseClass="XPLiteObject" persistent="KULLANICIPANELI" virtualName="KULLANICIPANELI">
+        <fields>
+          <generalXpObjectHasFields Id="83d8e204-d13b-4696-a1ac-269d2f63af26">
+            <field Id="fe533ac4-c220-4189-b14d-5457def984c7" name="ad" initialName="ad" persistent="ad" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="733c9be4-8cf5-4707-87d5-0e06efa8ee45">
+            <field Id="2e1564da-4eec-4b59-bc54-dc31e0032b18" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7fb0a9f5-b25c-46f4-9d5c-b9c827bfda04">
+            <field Id="00295657-d1d4-440c-90a8-2244f113cb50" name="nick" initialName="nick" persistent="nick" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e4c759f5-ecbf-4d79-b263-e596b024501b">
+            <field Id="a2c43e7f-bd71-4c76-bfd7-eebfbbf4def0" name="sifre" initialName="sifre" persistent="sifre" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e07a495c-90e0-4551-86c3-6930bf3cb7dd">
+            <field Id="029ca744-a305-46a0-b7d8-7dfc892344d3" name="soyad" initialName="soyad" persistent="soyad" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="04f1992b-2897-473d-a4cd-bf547b2f5ee1">
+            <field Id="224473b5-79b6-4cea-87ee-344a5d311902" name="tel" initialName="tel" persistent="tel" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e3b4e412-4d7f-46ad-9be3-a16bc2dbb435">
+            <field Id="8306f8ae-36a8-4326-b143-25d0d571a887" name="tip" initialName="tip" persistent="tip" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="e019b3f4-d918-4a56-8ce4-b3133b1c6ebd" sourceCollectionName="AMBARs" name="AMBARReferencesKULLANICIPANELI" targetFieldName="yetkili">
+            <xpObjectMoniker Id="8f0cbf5a-20e3-4b3d-83a1-b2658fd8b49b" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="c4b42353-b969-4934-96ff-bc569d66d027">
+            <collectionField Id="2825af1b-c708-4861-8f29-f0fa7ad52596" name="AMBARs" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="7ae5a293-5613-461b-a6fb-908d438fb020">
+      <xpObject Id="461a56e6-2e61-4003-8556-a4d3e9ee16a0" name="STOK" baseClass="XPLiteObject" userFileName="STOK" designerFileName="STOK.Designer" className="STOK" initialName="STOK" virtualBaseClass="XPLiteObject" persistent="STOK" virtualName="STOK">
+        <fields>
+          <generalXpObjectHasFields Id="6b4ff4ca-b3ab-4d75-9b61-33ad384ebad0">
+            <field Id="40faa3f3-9893-46c1-baee-ecba8fbab587" name="alıcıfirma" initialName="alıcıfirma" persistent="alıcıfirma" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="536f6b05-1788-4a92-b0ae-38137e4d3f34">
+            <field Id="f242cfe7-19e5-40a4-a3da-405e21fdfbb4" name="değeri" columnType="Int32" initialName="değeri" persistent="değeri" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#0" dbDefaultValue="0" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7d2392e8-bf53-4351-85c1-89065d8fe29c">
+            <field Id="20eca46d-407a-4e50-acb7-f5801d6456a0" name="gönderenfirma" initialName="gönderenfirma" persistent="gönderenfirma" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="f9417204-2449-4016-97ea-f266b67cb242">
+            <field Id="0bcffe59-e73b-487f-9753-861d28852eba" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b056106d-5b97-48f2-88fd-32a26ddf2eb8">
+            <field Id="90e00dc6-b7b0-47a3-b3bd-293374c4f4eb" name="miktar" columnType="Int32" initialName="miktar" persistent="miktar" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#0" dbDefaultValue="0" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2600b220-bf7c-4ee8-99a2-00ac001a5da5">
+            <field Id="1649c5a8-f752-4bbb-913c-4b776e4499e6" name="saklamasüresi" columnType="DateTime" initialName="saklamasüresi" persistent="saklamasüresi" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fcce18f1-cb96-4387-b38b-7a6f30189e54">
+            <field Id="48d69078-af73-4c06-9055-6d1811448625" name="URUN_ad" initialName="URUN_ad" persistent="URUN_ad" virtualColumnType="URUN" logicalType="URUN" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="07089f88-0daf-4848-a7cd-4419f6fceb07">
+      <xpObject Id="19e131f8-3b20-4d48-a5ef-2ae70f7fe368" name="URUN" baseClass="XPLiteObject" userFileName="URUN" designerFileName="URUN.Designer" className="URUN" initialName="URUN" virtualBaseClass="XPLiteObject" persistent="URUN" virtualName="URUN">
+        <fields>
+          <generalXpObjectHasFields Id="1c13fa8c-ad50-4c82-b449-5229af10880a">
+            <field Id="0d71e30f-939a-41e1-9bb3-6458a4b43bc6" name="ad" initialName="ad" persistent="ad" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="255" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b3d12efd-00f9-4b56-b10c-09eb5226b84f">
+            <field Id="0df5d597-e144-4b69-8e25-cdf05fbfbad7" name="birimdeğer" columnType="Int32" initialName="birimdeğer" persistent="birimdeğer" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" defaultValue="Int32#0" dbDefaultValue="0" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cf510cc7-99fd-4088-b6e8-b4da0a80ca24">
+            <field Id="f83a9564-fcc5-4b13-a698-fff199585851" name="id" columnType="Int32" initialName="id" key="true" isIdentity="true" persistent="id" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <saTargets>
+          <simpleAssociation Id="aa2213df-8033-4b1b-a962-d551c2b6a585" sourceCollectionName="STOKs" name="STOKReferencesURUN" targetFieldName="URUN_ad">
+            <xpObjectMoniker Id="461a56e6-2e61-4003-8556-a4d3e9ee16a0" />
+          </simpleAssociation>
+        </saTargets>
+        <collectionFields>
+          <xpObjectHasCollectionFields Id="11b8f33c-035b-4f00-851b-8d75aa8f99c2">
+            <collectionField Id="3da1ea0d-a848-4983-8a97-3e7d7d295112" name="STOKs" />
+          </xpObjectHasCollectionFields>
+        </collectionFields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>

@@ -1,0 +1,8 @@
+id:1 - salata - 123tl - malzeme_id:1
+id:2 - salata - 123tl - malzeme_id:2
+id:3 - salata - 123tl - malzeme_id:3
+id:4 - salata - 123tl - malzeme_id:4
+id:5 - salata - 123tl - malzeme_id:5
+id:6 - salata - 123tl - malzeme_id:6
+id:7 - salata - 123tl - malzeme_id:7
+id:8 - salata - 123tl - malzeme_id:8
